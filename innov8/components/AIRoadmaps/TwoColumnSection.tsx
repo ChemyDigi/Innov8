@@ -4,13 +4,10 @@ export default function AiTwoColumnSection() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20">
         {/* LEFT SIDE */}
         <div>
-          <h2 className="text-2xl md:text-3xl font-semibold text-black leading-snug">
-            Strategy-First Alignment
-          </h2>
-          <p className="mt-4 text-black/80 text-lg leading-relaxed ">
+          <h2 className="text-2xl md:text-3xl font-semibold text-black leading-snug text-justify">
             We align vision, capabilities, and goals to create a clear direction
             for AI adoption.
-          </p>
+          </h2>
         </div>
 
         {/* RIGHT SIDE */}
