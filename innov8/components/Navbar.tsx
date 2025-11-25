@@ -29,23 +29,22 @@ export default function Navbar() {
             alt="Innov8"
             className="h-6"
             height={100}
-            width={100}
           />
         </Link>
 
         {/* Nav Links */}
         <ul className="hidden md:flex gap-20 items-center text-[15px] text-black pl-20">
           <li>
-            <Link href="/" className="text-black font-medium hover:text-black transition">
+            <Link
+              href="/"
+              className="text-black font-medium hover:text-black transition"
+            >
               Home
             </Link>
           </li>
 
           {/* Hover trigger only */}
-          <li
-            className="relative"
-            onMouseEnter={() => setHover(true)}
-          >
+          <li className="relative" onMouseEnter={() => setHover(true)}>
             <button className="hover:text-red-600 transition">Solutions</button>
           </li>
 
@@ -79,15 +78,24 @@ export default function Navbar() {
 
             {/* 3 Columns */}
             <div className="grid grid-cols-3 gap-10 pt-4 text-[15px]">
-              <Link href="/solutions/ai" className="hover:text-red-600 transition">
+              <Link
+                href="solutions/ai-roadmaps"
+                className="hover:text-red-600 transition"
+              >
                 AI Roadmaps and R&D Services
               </Link>
 
-              <Link href="/solutions/cloud" className="hover:text-red-600 transition">
+              <Link
+                href="/solutions/cloud"
+                className="hover:text-red-600 transition"
+              >
                 Cloud and Platform Solutions
               </Link>
 
-              <Link href="/solutions/security" className="hover:text-red-600 transition">
+              <Link
+                href="/solutions/security"
+                className="hover:text-red-600 transition"
+              >
                 Intelligent Continuous Security
               </Link>
             </div>
