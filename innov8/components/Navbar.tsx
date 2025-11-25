@@ -25,7 +25,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="font-bold text-xl tracking-wide mr-4">
           <img
-            src="/images/innov8logo.png"
+            src="/images/innov8whitelogo.png"
             alt="Innov8"
             className="h-6"
             height={100}
