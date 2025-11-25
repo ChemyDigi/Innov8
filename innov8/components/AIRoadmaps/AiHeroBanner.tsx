@@ -22,11 +22,11 @@ export default function AiHeroBanner() {
           px-8 md:px-20 lg:px-32
         "
       >
-        <h1 className="text-white text-4xl md:text-6xl font-semibold mb-4 tracking-wide font-montserrat">
+        <h1 className="text-white text-4xl md:text-6xl font-semibold mb-4 tracking-wide">
           AI Roadmaps and R&D
         </h1>
 
-        <p className="text-white/90 text-lg md:text-xl max-w-3xl leading-relaxed font-montserrat">
+        <p className="text-white/90 text-lg md:text-xl max-w-3xl leading-relaxed">
           INNOV8 is an agile organization with a strong engineering team
           committed to delivering solutions that transcend traditional
           technology.

@@ -7,7 +7,7 @@ export default function AiTwoColumnSection() {
           <h2 className="text-2xl md:text-3xl font-semibold text-black leading-snug">
             Strategy-First Alignment
           </h2>
-          <p className="mt-4 text-black/80 text-lg leading-relaxed">
+          <p className="mt-4 text-black/80 text-lg leading-relaxed ">
             We align vision, capabilities, and goals to create a clear direction
             for AI adoption.
           </p>
@@ -15,7 +15,7 @@ export default function AiTwoColumnSection() {
 
         {/* RIGHT SIDE */}
         <div>
-          <p className="text-black/80 text-lg leading-relaxed">
+          <p className="text-black/80 text-lg leading-relaxed font-montserrat">
             We break down the journey into manageable stages—from pilot to
             production. De-risking investment and building a foundation for
             scalable growth.
