@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
-    <footer className="w-full bg-black text-white py-8 px-10">
-      <div className="flex items-center justify-between max-w-screen-xl mx-auto">
+    <footer className="w-full bg-black text-white py-8 px-4 md:px-10 overflow-x-hidden">
+      <div className="flex flex-col md:flex-row items-center justify-between max-w-screen-xl mx-auto gap-4">
 
         {/* Logo */}
         <img
@@ -11,7 +11,7 @@ export default function Footer() {
         />
 
         {/* Links */}
-        <div className="flex gap-10 text-sm">
+        <div className="flex flex-wrap gap-4 md:gap-10 text-sm justify-center">
           <a href="/privacy-policy" className="hover:underline">
             Privacy Policy
           </a>
