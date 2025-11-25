@@ -14,12 +14,12 @@ export default function HeroSection() {
       <div className="absolute inset-0 flex items-center px-40">
         <div className="w-full flex justify-start">
           <div className="max-w-3xl text-white">
-            <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+            <h1 className="text-4xl md:text-5xl font-bold leading-tight font-montserrat">
               Empowering Businesses to<br />
               Innovate, Transform, and <br /> Grow
             </h1>
 
-            <p className="mt-4 text-lg max-w-xl">
+            <p className="mt-4 text-lg max-w-xl font-montserrat">
               We combine strategy, engineering, and emerging technologies
               to help organisations modernise and scale confidently.
             </p>

@@ -1,31 +1,31 @@
 export default function CapabilitiesSection() {
   return (
-    <section className="py-16 px-6 bg-gray-50">
+    <section className="py-12 px-40 bg-[#F5F5F1] font-montserrat">
       <h2 className="text-3xl font-bold text-red-600 mb-6">
         Our Capabilities
       </h2>
 
-      <p className="max-w-3xl text-lg mb-10">
+      <p className="text-lg mb-10 text-black">
         Our capabilities & technologies are designed to bring business value
         and address the specific challenges of organisations across different
         industries seeking to maximise their digital potential.
       </p>
 
-      <div className="grid md:grid-cols-2 gap-6">
-        <button className="border p-4 rounded-lg text-left">
+      <div className="grid md:grid-cols-2 gap-6 text-black">
+        <button className="bg-white p-4 text-left">
           Cloud and Platform Solutions
         </button>
 
-        <button className="border p-4 rounded-lg text-left">
+        <button className="bg-white p-4 text-left">
           AI Roadmaps and R&D Services
         </button>
 
-        <button className="border p-4 rounded-lg text-left col-span-1">
+        <button className="bg-white p-4 text-left col-span-1">
           Intelligent Continuous Security
         </button>
       </div>
 
-      <p className="text-gray-600 mt-10 max-w-3xl">
+      <p className="text-black mt-10">
         We help organizations adopt modern platforms, secure digital ecosystems,
         and explore future-ready technologies.
       </p>
