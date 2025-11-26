@@ -15,9 +15,7 @@ export default function HeroSection() {
         <div className="w-full flex justify-start">
           <div className="max-w-3xl text-white">
             <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-              Intelligent Continuous
-              <br />
-              Security for a Resilient <br /> Digital Future
+              AI Roadmaps and R&D
             </h1>
 
             <p className="mt-4 text-lg max-w-xl">
