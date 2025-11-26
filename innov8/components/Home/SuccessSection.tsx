@@ -2,16 +2,16 @@ export default function SuccessSection() {
   return (
     <section className="relative py-10 bg-white">
       {/* Background Colored Band */}
-        <div className="absolute inset-0 top-48 bg-[#F5F5F1] w-full"></div>
+      <div className="absolute inset-0 top-48 bg-[#F5F5F1] w-full"></div>
 
-        <div className="relative max-w-7xl mx-auto px-4">
-            <h2 className="text-3xl font-bold text-brand mb-6 text-right">
-            Our Success Story
-            </h2>
+      <div className="relative max-w-7xl mx-auto px-4">
+        <h2 className="text-3xl font-bold text-brand mb-6 text-left md:text-right">
+          Our Success Story
+        </h2>
 
-            {/* Overlapping White Card */}
-            <div
-            className="
+        {/* Overlapping White Card */}
+        <div
+          className="
                 relative z-20
                 mt-12
                 bg-white 
@@ -20,30 +20,29 @@ export default function SuccessSection() {
                 flex flex-col md:flex-row 
                 gap-6 
                 p-4 md:p-6 
-                -mt-12 
             "
-            >
-            <div className="p-2 md:p-4 flex-1">
-                <p className="text-black leading-relaxed text-justify">
-                We’ve helped organizations modernize systems, build scalable cloud
+        >
+          <div className="p-2 md:p-4 flex-1">
+            <p className="text-black leading-relaxed text-justify">
+              We’ve helped organizations modernize systems, build scalable cloud
               platforms, and secure their digital environments. Our engineering-
               first approach ensures measurable business value from day one.
-                </p>
+            </p>
 
-                <button className="px-6 py-3 bg-black text-white mt-5 cursor-pointer">
-                Get in touch
-                </button>
-            </div>
+            <button className="px-6 py-3 bg-black text-white mt-5 cursor-pointer">
+              Get in touch
+            </button>
+          </div>
 
-            <img
-                src="/images/home/success.jpg"
-                alt="Subsidiary building"
-                width={500}
-                height={350}
-                className="object-cover flex-1"
-            />
-            </div>
+          <img
+            src="/images/home/success.jpg"
+            alt="Subsidiary building"
+            width={500}
+            height={350}
+            className="object-cover flex-1"
+          />
         </div>
+      </div>
     </section>
   );
 }

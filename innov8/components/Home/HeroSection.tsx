@@ -32,13 +32,14 @@ export default function HeroSection() {
           "
         >
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-            Empowering Businesses to<br />
+            Empowering Businesses to
+            <br />
             Innovate, Transform, and <br /> Grow
           </h1>
 
           <p className="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg max-w-xl mx-auto lg:mx-0">
-            We combine strategy, engineering, and emerging technologies
-            to help organisations modernise and scale confidently.
+            We combine strategy, engineering, and emerging technologies to help
+            organisations modernise and scale confidently.
           </p>
         </div>
       </div>

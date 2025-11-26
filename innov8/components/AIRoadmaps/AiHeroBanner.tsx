@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function HeroSection() {
+export default function AiHeroBanner() {
   return (
     <section className="relative w-full">
       <Image
