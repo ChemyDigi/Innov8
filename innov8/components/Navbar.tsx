@@ -47,9 +47,7 @@ export default function Navbar() {
           </li>
 
           <li className="relative" onMouseEnter={() => setHover(true)}>
-            <button className="hover:text-red-600 transition">
-              Solutions
-            </button>
+            <button className="hover:text-red-600 transition">Solutions</button>
           </li>
 
           <li>
@@ -82,13 +80,22 @@ export default function Navbar() {
             </h3>
 
             <div className="grid grid-cols-3 gap-10 pt-4 text-[15px]">
-              <Link href="/solutions/ai" className="text-gray-700 hover:text-red-600 transition">
+              <Link
+                href="/solutions/ai-roadmaps"
+                className="text-gray-700 hover:text-red-600 transition"
+              >
                 AI Roadmaps and R&D Services
               </Link>
-              <Link href="/solutions/cloud" className="text-gray-700 hover:text-red-600 transition">
+              <Link
+                href="/solutions/cloud"
+                className="text-gray-700 hover:text-red-600 transition"
+              >
                 Cloud and Platform Solutions
               </Link>
-              <Link href="/solutions/security" className="text-gray-700 hover:text-red-600 transition">
+              <Link
+                href="/solutions/intelligence-security"
+                className="text-gray-700 hover:text-red-600 transition"
+              >
                 Intelligent Continuous Security
               </Link>
             </div>
@@ -107,8 +114,11 @@ export default function Navbar() {
       {/* ---- MOBILE + TABLET MENU ---- */}
       {mobileOpen && (
         <div className="bg-white w-full py-6 px-10 flex flex-col gap-6 text-center lg:hidden shadow-lg">
-
-          <Link href="/" className="text-black text-lg" onClick={() => setMobileOpen(false)}>
+          <Link
+            href="/"
+            className="text-black text-lg"
+            onClick={() => setMobileOpen(false)}
+          >
             Home
           </Link>
 
@@ -123,24 +133,44 @@ export default function Navbar() {
 
             {mobileDropdown && (
               <div className="flex flex-col gap-3 text-[15px] mt-2">
-                <Link href="/solutions/ai" onClick={() => setMobileOpen(false)} className="hover:text-red-600 text-gray-400">
+                <Link
+                  href="/solutions/ai"
+                  onClick={() => setMobileOpen(false)}
+                  className="hover:text-red-600 text-gray-400"
+                >
                   AI Roadmaps and R&D Services
                 </Link>
-                <Link href="/solutions/cloud" onClick={() => setMobileOpen(false)} className="hover:text-red-600 text-gray-400">
+                <Link
+                  href="/solutions/cloud"
+                  onClick={() => setMobileOpen(false)}
+                  className="hover:text-red-600 text-gray-400"
+                >
                   Cloud and Platform Solutions
                 </Link>
-                <Link href="/solutions/security" onClick={() => setMobileOpen(false)} className="hover:text-red-600 text-gray-400">
+                <Link
+                  href="/solutions/security"
+                  onClick={() => setMobileOpen(false)}
+                  className="hover:text-red-600 text-gray-400"
+                >
                   Intelligent Continuous Security
                 </Link>
               </div>
             )}
           </div>
 
-          <Link href="/insights" className="text-black text-lg" onClick={() => setMobileOpen(false)}>
+          <Link
+            href="/insights"
+            className="text-black text-lg"
+            onClick={() => setMobileOpen(false)}
+          >
             Insights
           </Link>
 
-          <Link href="/about" className="text-black text-lg" onClick={() => setMobileOpen(false)}>
+          <Link
+            href="/about"
+            className="text-black text-lg"
+            onClick={() => setMobileOpen(false)}
+          >
             About
           </Link>
         </div>

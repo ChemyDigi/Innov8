@@ -18,7 +18,7 @@ export default function AiGridSection() {
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-4 sm:gap-x-6 md:gap-x-8 lg:gap-x-10 gap-y-8 sm:gap-y-10 md:gap-y-12 lg:gap-y-16 mb-12 sm:mb-16 md:mb-20">
         {items.map((item, index) => (
           <div key={index} className="text-center">
-            <div className="w-full h-[160px] sm:h-[180px] md:h-[200px] lg:h-[220px] relative mb-3 sm:mb-4">
+            <div className="w-full h-40 sm:h-[180px] md:h-[200px] lg:h-[220px] relative mb-3 sm:mb-4">
               <Image
                 src={item.src}
                 alt={item.title}
