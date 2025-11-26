@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Subsidiaries() {
   return (
-    <section className="relative w-full py-16 px-40 mx-auto bg-white">
+    <section className="relative py-10 bg-white">
       <div className="relative max-w-7xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-brand mb-6">Our Subsidiaries</h2>
 
