@@ -1,81 +1,118 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 export default function IndustrySolutions() {
-  // Static data — no JSON file required
   const industryData = [
     {
       title: "Banking and finance",
       description:
-        "Transforming financial institutions with secure, compliant, scalable digital systems.",
-      img: "/images/industry-banking.jpg",
+        "Transforming financial institutions with secure, compliant, and scalable digital systems that enhance customer experience and streamline operations.",
+      img: "/images/home/bank.jpg",
     },
     {
       title: "Teleco and media",
       description:
-        "Delivering platform-driven solutions that elevate connectivity and unlock revenue streams.",
-      img: "/images/industry-teleco.jpg",
+        "Delivering platform-driven solutions that elevate connectivity, improve service delivery, and unlock new digital revenue streams.",
+      img: "/images/home/media.jpg",
     },
     {
-      title: "Retail & Commerce",
+      title: "Retail",
       description:
-        "Empowering digital commerce with omnichannel customer-driven platforms.",
-      img: "/images/industry-retail.jpg",
+        "Empowering retailers with data-driven insights, intelligent operations, and seamless omnichannel experiences.",
+      img: "/images/home/retail.jpg",
     },
   ];
 
   const [index, setIndex] = useState(0);
+  const carouselRef = useRef(null);
 
-  const prev = () =>
-    setIndex((index - 1 + industryData.length) % industryData.length);
-  const next = () => setIndex((index + 1) % industryData.length);
+    const maxIndex = industryData.length - 2; // 3 cards - 2 visible = 1
+
+    const prev = () => {
+    setIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : 0));
+    };
+
+    const next = () => {
+    setIndex((prevIndex) => (prevIndex < maxIndex ? prevIndex + 1 : prevIndex));
+    };
+
+    // Scroll to the current card whenever index changes
+  useEffect(() => {
+    const container = carouselRef.current;
+    if (container) {
+      const cardWidth = container.children[0].offsetWidth + 16; // +gap-4 = 16px
+      container.scrollTo({
+        left: index * cardWidth,
+        behavior: "smooth",
+      });
+    }
+  }, [index]);
 
   return (
-    <section className="py-16 px-10 bg-[#F5F5F1] font-montserrat">
-      <h2 className="text-3xl font-bold text-brand mb-6">
-        Our Industry Solutions
-      </h2>
+    <section className="relative py-10 bg-white">
+      <div className="flex flex-col lg:flex-row items-start lg:items-center relative max-w-7xl mx-auto px-4">
+        {/* Left side: Title, description, arrows */}
+        <div className="flex-1 flex flex-col gap-6">
+          <h2 className="text-3xl font-bold text-brand">
+            Our Industry Solutions
+          </h2>
 
-      <p className="text-lg mb-10 text-black max-w-3xl">
-        We support organisations across diverse industries with tailored digital
-        strategies and high-impact technology solutions that solve real business
-        problems.
-      </p>
+          <p className="text-lg text-black max-w-md text-justify">
+            We support organisations across diverse industries with tailored
+            digital strategies and high-impact technology solutions that solve
+            real business problems.
+          </p>
 
-      <div className="flex gap-10 items-start">
-        {/* Left arrow controls */}
-        <div className="flex flex-col gap-4 pt-16">
-          <button
-            onClick={prev}
-            className="p-3 bg-white shadow rounded-full hover:bg-brand hover:text-white"
-          >
-            <FaChevronLeft />
-          </button>
-          <button
-            onClick={next}
-            className="p-3 bg-white shadow rounded-full hover:bg-brand hover:text-white"
-          >
-            <FaChevronRight />
-          </button>
+          <div className="flex gap-4 mt-4">
+                <button
+                    onClick={prev}
+                    disabled={index === 0}
+                    className={`p-3 rounded-full border shadow ${
+                        index === 0
+                        ? "bg-gray-200 text-gray-400 border-gray-200"
+                        : "bg-white text-brand border border-brand cursor-pointer hover:bg-brand hover:text-white"
+                    }`}
+                    >
+                    <FaChevronLeft />
+                </button>
+
+                <button
+                    onClick={next}
+                    disabled={index === maxIndex}
+                    className={`p-3 rounded-full border shadow ${
+                        index === maxIndex
+                        ? "bg-gray-200 text-gray-400 border-gray-200"
+                        : "bg-white text-brand border border-brand cursor-pointer hover:bg-brand hover:text-white"
+                    }`}
+                    >
+                    <FaChevronRight />
+                </button>
+            </div>
         </div>
 
-        {/* Carousel card */}
-        <div className="w-full max-w-xl bg-white border rounded-xl shadow p-4">
-          <img
-            src={industryData[index].img}
-            alt={industryData[index].title}
-            className="rounded-lg w-full h-56 object-cover mb-4"
-          />
-
-          <h3 className="font-bold text-lg mb-2">
-            {industryData[index].title}
-          </h3>
-
-          <p className="text-sm text-gray-700">
-            {industryData[index].description}
-          </p>
+        {/* Right side: Horizontal carousel */}
+        <div className="flex-1 overflow-hidden">
+          <div
+            ref={carouselRef}
+            className="flex gap-4 overflow-x-hidden"
+          >
+            {industryData.map((item, i) => (
+              <div
+                key={i}
+                className="flex-shrink-0 w-[40%] bg-white border border-[#E4E4E4]"
+              >
+                <img
+                  src={item.img}
+                  alt={item.title}
+                  className="w-full h-56 object-cover"
+                />
+                <h3 className="font-bold text-lg mb-2 text-black p-4">{item.title}</h3>
+                <p className="text-sm text-gray-700 text-justify p-4 pt-0">{item.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

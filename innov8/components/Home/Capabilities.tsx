@@ -33,7 +33,7 @@ export default function CapabilitiesSection() {
       <div className="relative max-w-7xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-brand mb-6">Our Capabilities</h2>
 
-        <p className="text-lg mb-10">
+        <p className="text-lg mb-10 text-justify">
           Our capabilities & technologies are designed to bring business value
           and address the specific challenges of organisations across different
           industries seeking to maximise their digital potential.
@@ -68,7 +68,7 @@ export default function CapabilitiesSection() {
           ))}
         </div>
 
-        <p className="mt-10">
+        <p className="mt-10 text-justify">
           We help organizations adopt modern platforms, secure digital ecosystems,
           and explore future-ready technologies.
         </p>
