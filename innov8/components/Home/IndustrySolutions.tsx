@@ -65,7 +65,7 @@ export default function IndustrySolutions() {
             real business problems.
           </p>
 
-          <div className="flex gap-4 mt-4">
+          <div className="flex gap-4 my-4">
                 <button
                     onClick={prev}
                     disabled={index === 0}
