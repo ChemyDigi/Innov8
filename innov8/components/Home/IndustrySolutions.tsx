@@ -26,23 +26,44 @@ export default function IndustrySolutions() {
   ];
 
   const [index, setIndex] = useState(0);
-  const carouselRef = useRef(null);
+  const [maxIndex, setMaxIndex] = useState(1);
+  const carouselRef = useRef<HTMLDivElement>(null);
 
-    const maxIndex = industryData.length - 2; // 3 cards - 2 visible = 1
+  // Calculate maxIndex based on screen size
+  useEffect(() => {
+    const updateMaxIndex = () => {
+      const screenWidth = window.innerWidth;
+      if (screenWidth < 640) {
+        // Mobile: 1 card visible at a time
+        setMaxIndex(industryData.length - 1);
+      } else if (screenWidth < 1024) {
+        // Tablet: 2 cards visible
+        setMaxIndex(industryData.length - 2);
+      } else {
+        // Desktop: 2 cards visible
+        setMaxIndex(industryData.length - 2);
+      }
+    };
 
-    const prev = () => {
+    updateMaxIndex();
+    window.addEventListener("resize", updateMaxIndex);
+    return () => window.removeEventListener("resize", updateMaxIndex);
+  }, []);
+
+  const prev = () => {
     setIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : 0));
-    };
+  };
 
-    const next = () => {
+  const next = () => {
     setIndex((prevIndex) => (prevIndex < maxIndex ? prevIndex + 1 : prevIndex));
-    };
+  };
 
-    // Scroll to the current card whenever index changes
+  // Scroll to the current card whenever index changes
   useEffect(() => {
     const container = carouselRef.current;
     if (container) {
-      const cardWidth = container.children[0].offsetWidth + 16; // +gap-4 = 16px
+      const firstCard = container.children[0] as HTMLElement;
+      const cardWidth = firstCard.offsetWidth + 16; // +gap-4 = 16px
       container.scrollTo({
         left: index * cardWidth,
         behavior: "smooth",
@@ -66,50 +87,51 @@ export default function IndustrySolutions() {
           </p>
 
           <div className="flex gap-4 my-4">
-                <button
-                    onClick={prev}
-                    disabled={index === 0}
-                    className={`p-3 rounded-full border shadow ${
-                        index === 0
-                        ? "bg-gray-200 text-gray-400 border-gray-200"
-                        : "bg-white text-brand border border-brand cursor-pointer hover:bg-brand hover:text-white"
-                    }`}
-                    >
-                    <FaChevronLeft />
-                </button>
+            <button
+              onClick={prev}
+              disabled={index === 0}
+              className={`p-3 rounded-full border ${
+                index === 0
+                  ? "bg-gray-200 text-gray-400 border-gray-200"
+                  : "bg-white text-brand border border-brand cursor-pointer hover:bg-brand hover:text-white"
+              }`}
+            >
+              <FaChevronLeft />
+            </button>
 
-                <button
-                    onClick={next}
-                    disabled={index === maxIndex}
-                    className={`p-3 rounded-full border shadow ${
-                        index === maxIndex
-                        ? "bg-gray-200 text-gray-400 border-gray-200"
-                        : "bg-white text-brand border border-brand cursor-pointer hover:bg-brand hover:text-white"
-                    }`}
-                    >
-                    <FaChevronRight />
-                </button>
-            </div>
+            <button
+              onClick={next}
+              disabled={index === maxIndex}
+              className={`p-3 rounded-full border ${
+                index === maxIndex
+                  ? "bg-gray-200 text-gray-400 border-gray-200"
+                  : "bg-white text-brand border border-brand cursor-pointer hover:bg-brand hover:text-white"
+              }`}
+            >
+              <FaChevronRight />
+            </button>
+          </div>
         </div>
 
         {/* Right side: Horizontal carousel */}
-        <div className="flex-1 overflow-hidden">
-          <div
-            ref={carouselRef}
-            className="flex gap-4 overflow-x-hidden"
-          >
+        <div className="flex-1 overflow-hidden w-full lg:w-auto">
+          <div ref={carouselRef} className="flex gap-4 overflow-x-hidden">
             {industryData.map((item, i) => (
               <div
                 key={i}
-                className="flex-shrink-0 w-[40%] bg-white border border-[#E4E4E4]"
+                className="shrink-0 w-[85%] sm:w-[45%] lg:w-[40%] bg-white border border-[#E4E4E4]"
               >
                 <img
                   src={item.img}
                   alt={item.title}
                   className="w-full h-56 object-cover"
                 />
-                <h3 className="font-bold text-lg mb-2 text-black p-4">{item.title}</h3>
-                <p className="text-sm text-gray-700 text-justify p-4 pt-0">{item.description}</p>
+                <h3 className="font-bold text-lg mb-2 text-black p-4">
+                  {item.title}
+                </h3>
+                <p className="text-sm text-gray-700 text-justify p-4 pt-0">
+                  {item.description}
+                </p>
               </div>
             ))}
           </div>
