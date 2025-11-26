@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AiHeroBanner() {
   return (
-    <section className="relative w-full h-[300px] md:h-[350px] lg:h-[400px] overflow-hidden">
+    <section className="relative w-full h-[400px] sm:h-[450px] md:h-[500px] lg:h-[550px] overflow-hidden">
       {/* Background Image */}
       <Image
         src="/AiRoadmap/hero-banner.png"
@@ -19,14 +19,14 @@ export default function AiHeroBanner() {
       <div
         className="
           relative z-10 h-full flex flex-col justify-center
-          px-8 md:px-20 lg:px-32
+          px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32
         "
       >
-        <h1 className="text-white text-4xl md:text-6xl font-semibold mb-4 tracking-wide">
+        <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-3 sm:mb-4 tracking-wide">
           AI Roadmaps and R&D
         </h1>
 
-        <p className="text-white/90 text-lg md:text-xl max-w-3xl leading-relaxed">
+        <p className="text-white/90 text-base sm:text-lg md:text-xl max-w-3xl leading-relaxed">
           INNOV8 is an agile organization with a strong engineering team
           committed to delivering solutions that transcend traditional
           technology.

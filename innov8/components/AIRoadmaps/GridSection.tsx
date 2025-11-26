@@ -13,12 +13,12 @@ export default function AiGridSection() {
   ];
 
   return (
-    <section className="w-full bg-white py-20 px-6 md:px-12 lg:px-32">
+    <section className="w-full bg-white py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32">
       {/* === GRID SECTION === */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-x-10 gap-y-16 mb-20">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-4 sm:gap-x-6 md:gap-x-8 lg:gap-x-10 gap-y-8 sm:gap-y-10 md:gap-y-12 lg:gap-y-16 mb-12 sm:mb-16 md:mb-20">
         {items.map((item, index) => (
           <div key={index} className="text-center">
-            <div className="w-full h-[220px] relative mb-4">
+            <div className="w-full h-[160px] sm:h-[180px] md:h-[200px] lg:h-[220px] relative mb-3 sm:mb-4">
               <Image
                 src={item.src}
                 alt={item.title}
@@ -26,13 +26,13 @@ export default function AiGridSection() {
                 className="object-cover"
               />
             </div>
-            <p className="text-black text-lg font-medium">{item.title}</p>
+            <p className="text-black text-sm sm:text-base md:text-lg font-medium">{item.title}</p>
           </div>
         ))}
       </div>
 
       {/* === FULL-WIDTH IMAGE BELOW === */}
-      <div className="w-full h-[350px] md:h-[420px] lg:h-[480px] relative">
+      <div className="w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-[480px] xl:h-[550px] relative">
         <Image
           src={FullWidthImg}
           alt="AI Technologies Banner"
