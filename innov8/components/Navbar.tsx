@@ -1,7 +1,7 @@
 "use client";
-import { useState } from "react";
 import Link from "next/link";
-import { IoMenu, IoClose } from "react-icons/io5";
+import { useState } from "react";
+import { IoClose, IoMenu } from "react-icons/io5";
 
 export default function Navbar() {
   const [hover, setHover] = useState(false); // desktop dropdown
@@ -82,7 +82,7 @@ export default function Navbar() {
               <Link href="/solutions/ai" className="text-gray-700 hover:text-red-600 transition">
                 AI Roadmaps and R&D Services
               </Link>
-              <Link href="/solutions/cloud" className="text-gray-700 hover:text-red-600 transition">
+              <Link href="/solutions/cloud&platform" className="text-gray-700 hover:text-red-600 transition">
                 Cloud and Platform Solutions
               </Link>
               <Link href="/solutions/security" className="text-gray-700 hover:text-red-600 transition">
