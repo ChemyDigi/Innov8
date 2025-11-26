@@ -7,10 +7,8 @@ export default function SecuritySection() {
       <div className="grid grid-cols-1 md:grid-cols-[1.2fr_1.8fr_1fr] gap-16 items-start">
         {/* COLUMN 1 — Heading */}
         <div>
-          <h2 className="text-2xl md:text-3xl font-semibold text-black leading-tight mb-8 text-justify">
-            Intelligent Continuous
-            <br />
-            Security with Help Innov8’s Expertise.
+          <h2 className="text-1xl md:text-2xl font-semibold text-black leading-tight mb-8 text-justify">
+            Intelligent Continuous Security with Help Innov8’s Expertise.
           </h2>
 
           <p className="text-lg text-black leading-relaxed text-justify">
@@ -38,7 +36,7 @@ export default function SecuritySection() {
         {/* COLUMN 3 — Logo */}
         <div className="flex md:justify-end justify-start pt-2">
           <Image
-            src="/images/innov8logo.png"
+            src="/images/innov8logo black.png"
             alt="Innov8 Logo"
             width={260}
             height={100}
