@@ -3,6 +3,7 @@ import IntelligenceEbook from "@/components/IntelligenceSecurity/IntelligenceEbo
 import ResourcesSection from "@/components/IntelligenceSecurity/ResourcesSection";
 import IntelligenceIntro from "@/components/IntelligenceSecurity/IntelligenceIntro";
 import DetailsSection from "@/components/IntelligenceSecurity/DetailsSection";
+import ConnectSection from "@/components/IntelligenceSecurity/ConnectSection";
 
 export default function Page() {
   return (
@@ -12,6 +13,7 @@ export default function Page() {
       <IntelligenceEbook />
       <DetailsSection />
       <ResourcesSection />
+      <ConnectSection />
     </div>
   );
 }
