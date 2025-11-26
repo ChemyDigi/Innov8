@@ -40,7 +40,7 @@ export default function Navbar() {
           <li>
             <Link
               href="/home"
-              className="text-black font-medium hover:text-black transition"
+              className=" hover:text-red-600 transition"
             >
               Home
             </Link>
