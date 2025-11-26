@@ -31,9 +31,24 @@ export default function CapabilitiesSection() {
   return (
     <section className="bg-[#F5F5F1] text-black relative py-10">
       <div className="relative max-w-7xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-brand mb-6">Our Capabilities</h2>
 
-        <p className="text-lg mb-10 text-justify">
+        {/* Title */}
+        <h2
+          className="
+            text-3xl font-bold text-brand mb-6
+            text-center md:text-left
+          "
+        >
+          Our Capabilities
+        </h2>
+
+        {/* Intro */}
+        <p
+          className="
+            text-lg mb-10 
+            text-center md:text-justify
+          "
+        >
           Our capabilities & technologies are designed to bring business value
           and address the specific challenges of organisations across different
           industries seeking to maximise their digital potential.
@@ -43,11 +58,17 @@ export default function CapabilitiesSection() {
         <div className="grid md:grid-cols-2 gap-6">
           {capabilities.map((item, index) => (
             <div key={index} className="bg-white rounded-lg p-4 shadow-sm">
+
+              {/* Header */}
               <button
                 onClick={() => toggleDropdown(index)}
-                className="w-full flex justify-between items-center text-left"
+                className="
+                  w-full flex justify-between items-center 
+                  text-left md:text-left
+                  text-center md:text-left
+                "
               >
-                <span className="font-medium">{item.title}</span>
+                <span className="font-medium w-full">{item.title}</span>
 
                 <FaCaretDown
                   className={`transition-transform duration-300 text-brand size-6 cursor-pointer ${
@@ -56,19 +77,27 @@ export default function CapabilitiesSection() {
                 />
               </button>
 
-              {/* Dropdown Content */}
+              {/* Content */}
               <div
                 className={`transition-all overflow-hidden ${
                   openIndex === index ? "max-h-40 mt-3" : "max-h-0"
                 }`}
               >
-                <p className="text-sm">{item.description}</p>
+                <p className="text-sm text-center md:text-left">
+                  {item.description}
+                </p>
               </div>
             </div>
           ))}
         </div>
 
-        <p className="mt-10 text-justify">
+        {/* Bottom Text */}
+        <p
+          className="
+            mt-10 
+            text-center md:text-justify
+          "
+        >
           We help organizations adopt modern platforms, secure digital ecosystems,
           and explore future-ready technologies.
         </p>
