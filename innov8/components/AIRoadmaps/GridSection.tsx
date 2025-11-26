@@ -26,7 +26,9 @@ export default function AiGridSection() {
                 className="object-cover"
               />
             </div>
-            <p className="text-black text-sm sm:text-base md:text-lg font-medium">{item.title}</p>
+            <p className="text-black text-sm sm:text-base md:text-lg font-medium">
+              {item.title}
+            </p>
           </div>
         ))}
       </div>
