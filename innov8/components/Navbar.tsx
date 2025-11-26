@@ -12,21 +12,21 @@ export default function Navbar() {
     <header className="w-full relative">
       {/* Top Bar */}
       <div className="bg-[#F1F1EB] text-black text-sm py-2 px-10 flex justify-end gap-8">
-        <Link href="/contact" className="hover:underline transition">
+        <Link href="/contact" className="hover:text-red-600 transition">
           Contact Us
         </Link>
-        <Link href="/careers" className="hover:underline transition">
+        <Link href="/careers" className="hover:text-red-600 transition">
           Careers
         </Link>
       </div>
 
       {/* Main Navigation */}
       <nav
-        className="bg-[#ffffff] py-4 px-20 flex items-center justify-between relative z-20"
+        className="bg-[#ffffff] py-4 px-20 flex items-center relative z-20"
         onMouseLeave={() => setHover(false)}
       >
         {/* Logo */}
-        <Link href="/" className="font-bold text-xl tracking-wide">
+        <Link href="/" className="font-bold text-xl tracking-wide mr-30">
           <img
             src="/images/innov8whitelogo.png"
             alt="Innov8"
@@ -36,12 +36,9 @@ export default function Navbar() {
         </Link>
 
         {/* ---- DESKTOP NAVIGATION ---- */}
-        <ul className="hidden lg:flex gap-20 items-center text-[15px] text-black pl-20">
+        <ul className="hidden lg:flex gap-18 items-center text-[15px] text-black flex-1">
           <li>
-            <Link
-              href="/home"
-              className=" hover:text-red-600 transition"
-            >
+            <Link href="/home" className=" hover:text-red-600 transition">
               Home
             </Link>
           </li>
