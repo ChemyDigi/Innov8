@@ -11,11 +11,7 @@ export default function Footer() {
         "
       >
         {/* Logo */}
-        <img
-          src="/images/innov8logo.png"
-          alt="Innov8"
-          className="h-6"
-        />
+        <img src="/images/innov8logo.png" alt="Innov8" className="h-6" />
 
         {/* Links */}
         <div className="

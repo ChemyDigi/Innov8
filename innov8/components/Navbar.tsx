@@ -38,7 +38,10 @@ export default function Navbar() {
         {/* ---- DESKTOP NAVIGATION ---- */}
         <ul className="hidden lg:flex gap-20 items-center text-[15px] text-black pl-20">
           <li>
-            <Link href="/" className="text-black font-medium hover:text-black transition">
+            <Link
+              href="/"
+              className="text-black font-medium hover:text-black transition"
+            >
               Home
             </Link>
           </li>
