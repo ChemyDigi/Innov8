@@ -1,17 +1,20 @@
 [
   {
-    "title": "Banking and Finance",
-    "img": "/images/blue1.jpg",
-    "desc": "Driving financial innovation through strategic insight."
+    "id": 1,
+    "title": "Banking and finance",
+    "description": "Driving financial innovation through advanced technology and strategic insight.",
+    "img": "/images/home/latest1.jpg"
   },
   {
+    "id": 2,
     "title": "Digital Strategy",
-    "img": "/images/strategy.jpg",
-    "desc": "Transforming organisations with data-driven digital roadmaps."
+    "description": "Transforming organizations with data-driven digital roadmaps for sustainable growth.",
+    "img": "/images/home/latest2.jpg"
   },
   {
+    "id": 3,
     "title": "AI & Future Technology",
-    "img": "/images/blue2.jpg",
-    "desc": "Harnessing intelligent systems to accelerate innovation."
+    "description": "Harnessing intelligent systems to accelerate innovation and reshape the future.",
+    "img": "/images/home/latest1.jpg"
   }
 ]

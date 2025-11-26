@@ -29,7 +29,7 @@ export default function CapabilitiesSection() {
   ];
 
   return (
-    <section className="py-12 px-40 bg-[#F5F5F1] font-montserrat text-black">
+    <section className="bg-[#F5F5F1] text-black relative py-10">
       <div className="relative max-w-7xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-brand mb-6">Our Capabilities</h2>
 
