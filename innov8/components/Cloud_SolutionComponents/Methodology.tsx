@@ -12,7 +12,7 @@ const Methodology = () => {
         </div>
 
         {/* Single White Box Container - Overflows over black box */}
-        <div className="bg-white rounded-lg border border-gray-200 shadow-sm p-8 relative z-20 mb-80">
+        <div className="bg-white border border-gray-200 shadow-sm p-8 relative z-20 mb-80">
           {/* Three Columns for Discover, Design, Develop */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             {/* Discover Column */}
@@ -58,7 +58,7 @@ const Methodology = () => {
           {/* Outputs Section - Three columns below */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Output 1 */}
-            <div className="bg-gray-100 rounded-lg p-6">
+            <div className="bg-gray-100 p-6">
               <h4 className="text-lg font-semibold text-gray-900 mb-3">Output</h4>
               <p className="text-gray-600">
                 A comprehensive strategy and business case tailored to your unique challenges and objectives.
@@ -66,7 +66,7 @@ const Methodology = () => {
             </div>
 
             {/* Output 2 */}
-            <div className="bg-gray-100 rounded-lg p-6">
+            <div className="bg-gray-100 p-6">
               <h4 className="text-lg font-semibold text-gray-900 mb-3">Output</h4>
               <p className="text-gray-600">
                 A detailed technical and operational design ready for execution, ensuring your cloud environment is safe and optimized from the start.
