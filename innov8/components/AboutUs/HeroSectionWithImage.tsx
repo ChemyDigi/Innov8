@@ -20,7 +20,7 @@ export default function HeroSection(): React.ReactElement {
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="max-w-3xl">
           {/* MAIN TITLE */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
             Unlock Your Organization's Full Potential with Our Digital
             Transformation Solutions
           </h1>

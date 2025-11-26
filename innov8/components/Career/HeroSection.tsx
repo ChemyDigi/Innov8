@@ -24,12 +24,12 @@ export default function HeroSection() {
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <div className="text-white">
             {/* Main Heading */}
-            <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-semibold mb-4 sm:mb-6 capitalize tracking-tight">
+           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
               Together, We Engineer Tomorrow
             </h1>
             
             {/* Subtitle */}
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-normal max-w-full sm:max-w-xl md:max-w-2xl leading-relaxed sm:leading-relaxed md:leading-relaxed">
+             <p className="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg max-w-xl mx-auto lg:mx-0">
               At INNOV8, we're not just filling positions; we're building careers that help shape a resilient digital future, driven by agility, engineering excellence, and a passion for cutting-edge solutions.
             </p>
           </div>

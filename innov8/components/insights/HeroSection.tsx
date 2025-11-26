@@ -33,25 +33,12 @@ export default function HeroSection() {
           <div className="text-white">
 
             {/* Heading */}
-            <h1
-              className="
-                text-3xl sm:text-5xl md:text-6xl lg:text-7xl
-                font-semibold tracking-tight capitalize
-                mb-3 sm:mb-4 md:mb-6
-              "
-            >
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
               Insights
             </h1>
 
             {/* Subtitle */}
-            <p
-              className="
-                text-base sm:text-lg md:text-xl lg:text-3xl
-                font-normal leading-relaxed
-                max-w-xl md:max-w-2xl
-                mx-auto lg:mx-0      /* center on mobile/tablet only */
-              "
-            >
+            <p className="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg max-w-xl mx-auto lg:mx-0">
               Stay updated with emerging ideas, market movements, and expert viewpoints shaping the future
             </p>
           </div>
