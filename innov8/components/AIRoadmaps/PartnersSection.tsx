@@ -21,7 +21,10 @@ export default function PartnersSection() {
       <div className="bg-white mx-auto p-6 sm:p-8 md:p-10 lg:p-14 shadow-sm rounded-md max-w-7xl">
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-6 sm:gap-x-10 md:gap-x-12 lg:gap-x-20 gap-y-8 sm:gap-y-12 md:gap-y-16 place-items-center">
           {logos.map((logo, index) => (
-            <div key={index} className="relative w-28 h-16 sm:w-32 sm:h-18 md:w-40 md:h-20 lg:w-48 lg:h-24">
+            <div
+              key={index}
+              className="relative w-28 h-16 sm:w-32 sm:h-18 md:w-40 md:h-20 lg:w-48 lg:h-24"
+            >
               <Image
                 src={logo}
                 alt={`Partner Logo ${index + 1}`}
