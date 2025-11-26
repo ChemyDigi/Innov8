@@ -1,12 +1,25 @@
 export default function Footer() {
   return (
-    <footer className="w-full bg-black text-white py-8 px-4 md:px-10 overflow-x-hidden">
-      <div className="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto gap-4">
+    <footer className="w-full bg-black text-white py-8 px-10">
+      <div
+        className="
+          max-w-screen-xl mx-auto 
+          flex flex-col md:flex-row 
+          items-center md:items-center 
+          justify-between 
+          gap-6 md:gap-10
+        "
+      >
         {/* Logo */}
         <img src="/images/innov8logo.png" alt="Innov8" className="h-6" />
 
         {/* Links */}
-        <div className="flex flex-wrap gap-4 md:gap-10 text-sm justify-center">
+        <div className="
+          flex flex-col md:flex-row 
+          items-center 
+          gap-4 md:gap-10 
+          text-sm
+        ">
           <a href="/privacy-policy" className="hover:underline">
             Privacy Policy
           </a>
