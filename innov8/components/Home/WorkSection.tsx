@@ -2,7 +2,6 @@ export default function WorkSection() {
   return (
     <section className="py-20 bg-white">
       <div className="relative max-w-7xl mx-auto p-10 bg-[#F5F5F1] flex flex-col md:flex-row items-start md:items-center justify-between">
-        
         {/* LEFT CONTENT */}
         <div className="md:w-3/4">
           <h2 className="text-3xl md:text-4xl font-semibold text-black">
@@ -27,7 +26,6 @@ export default function WorkSection() {
             Get in touch
           </button>
         </div>
-
       </div>
     </section>
   );
