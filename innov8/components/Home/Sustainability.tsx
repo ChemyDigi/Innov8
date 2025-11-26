@@ -5,7 +5,7 @@ export default function Sustainability() {
         <div className="absolute inset-0 top-58 bg-[#F5F5F1] w-full"></div>
 
         <div className="relative max-w-7xl mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-semibold text-brand relative">
+            <h2 className="text-3xl font-bold text-brand mb-6">
             Our Commitment <br /> to Sustainability
             </h2>
 
