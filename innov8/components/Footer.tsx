@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="w-full bg-black text-white py-8 px-4 md:px-10 overflow-x-hidden">
-      <div className="flex flex-col md:flex-row items-center justify-between max-w-screen-xl mx-auto gap-4">
+      <div className="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto gap-4">
         {/* Logo */}
         <img src="/images/innov8logo.png" alt="Innov8" className="h-6" />
 
