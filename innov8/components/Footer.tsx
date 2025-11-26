@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="w-full bg-black text-white py-8 px-10">
       <div
         className="
-          max-w-7xl mx-auto 
+          max-w-screen-xl mx-auto 
           flex flex-col md:flex-row 
           items-center md:items-center 
           justify-between 
@@ -14,14 +14,12 @@ export default function Footer() {
         <img src="/images/innov8logo.png" alt="Innov8" className="h-6" />
 
         {/* Links */}
-        <div
-          className="
+        <div className="
           flex flex-col md:flex-row 
           items-center 
           gap-4 md:gap-10 
           text-sm
-        "
-        >
+        ">
           <a href="/privacy-policy" className="hover:underline">
             Privacy Policy
           </a>

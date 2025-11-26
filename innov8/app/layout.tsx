@@ -30,15 +30,15 @@ children,
 }: Readonly<{
 children: React.ReactNode;
 }>) {
-return (
-<html lang="en">
-<body
-className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} antialiased`}
->
-<Navbar />
-{children}
-<Footer />
-</body>
-</html>
-);
+  return (
+    <html lang="en" className="overflow-x-hidden">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} antialiased overflow-x-hidden`}
+      >
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
+    </html>
+  );
 }
