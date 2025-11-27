@@ -1,14 +1,25 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import HeroSection from "../../components/insights/HeroSection";
 import TechInsights from "../../components/insights/TechInsights";
 import BlogDetail from "../../components/insights/BlogDetail";
 import insightsData from "../data/insightsData.json";
 
 export default function InsightsPage() {
+  const searchParams = useSearchParams();
+  const articleId = searchParams.get("article");
+
   const [selectedPost, setSelectedPost] = useState<string | null>(null);
   const blogDetailRef = useRef<HTMLDivElement>(null);
+
+  // Set selected post from URL parameter on mount
+  useEffect(() => {
+    if (articleId && insightsData[articleId as keyof typeof insightsData]) {
+      setSelectedPost(articleId);
+    }
+  }, [articleId]);
 
   useEffect(() => {
     if (selectedPost && blogDetailRef.current) {
