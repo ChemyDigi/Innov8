@@ -1,35 +1,47 @@
-import React from 'react';
+import Image from "next/image";
 
-const Hero_Section: React.FC = () => {
+export default function AiHeroBanner() {
   return (
     <section className="relative w-full">
-      {/* Full Width Background Image - No cropping */}
-      <div className="w-full">
-        <img 
-          src="/images/CloudSolutions/Hero_Section.png" 
-          alt="Cloud Native Solutions"
-          className="w-full h-auto"
-        />
-      </div>
-      
-      {/* Text Content Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full flex items-center">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-          <div className="max-w-2xl">
-            {/* Main Heading - Moved down for mobile */}
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight mt-8 sm:mt-0 mb-2 sm:mb-6">
-              Emerging cloud-native solutions
-            </h1>
+      <Image
+        src="/images/CloudSolutions/Hero_Section.png"
+        alt="Hero background"
+        width={2000}
+        height={1000}
+        className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] object-cover"
+      />
 
-            {/* Subheading - Moved up for mobile */}
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white font-medium -mt-2 sm:mt-0">
-              Make your cloud-first journey safe from the start.
-            </p>
-          </div>
+      <div
+        className="
+          absolute inset-0 flex items-center 
+          px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40
+
+          justify-center        
+          lg:justify-start    
+          text-center          
+          lg:text-left         
+        "
+      >
+        <div
+          className="
+            w-full 
+            max-w-3xl 
+            text-white
+            mx-auto             
+            lg:mx-0            
+          "
+        >
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+            AI Roadmaps and R&D
+          </h1>
+
+          <p className="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg max-w-xl mx-auto lg:mx-0">
+            INNOV8 is an agile engineering-driven organization helping
+            enterprises modernize security, cloud platforms, and AI
+            capabilities..
+          </p>
         </div>
       </div>
     </section>
   );
-};
-
-export default Hero_Section;
+}
