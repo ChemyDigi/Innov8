@@ -73,7 +73,7 @@ export default function OurValues(): React.ReactElement {
                 <span className="text-brand mr-2 mt-1">•</span>
                 <span>
                   We empower organisations to innovate by adopting modern cloud,
-                  security, and AI-driven practices.
+                  security and AI driven practices.
                 </span>
               </li>
             </ul>

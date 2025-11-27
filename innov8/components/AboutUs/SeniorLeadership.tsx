@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Sustainability() {
   return (
     <section className="relative py-10 bg-white">
@@ -24,15 +26,17 @@ export default function Sustainability() {
         >
           <div className="p-2 md:p-4 flex-1">
             <p className="text-black leading-relaxed text-justify">
-              We’ve helped organizations modernize legacy systems, build
+              We've helped organizations modernize legacy systems, build
               scalable cloud platforms, and secure their digital environments.
               Our engineering-first approach ensures every solution delivers
               measurable business value from day one.
             </p>
 
-            <button className="px-6 py-3 bg-black text-white mt-5 cursor-pointer">
-              Get in touch
-            </button>
+            <Link href="/contact">
+              <button className="px-6 py-3 bg-black text-white mt-5 cursor-pointer">
+                Get in touch
+              </button>
+            </Link>
           </div>
 
           <img
