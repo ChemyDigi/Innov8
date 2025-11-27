@@ -28,6 +28,10 @@ export default function CapabilitiesSection() {
     },
   ];
 
+  // Split items manually into two columns
+  const leftColumn = capabilities.filter((_, i) => i % 2 === 0); // 0, 2
+  const rightColumn = capabilities.filter((_, i) => i % 2 !== 0); // 1
+
   return (
     <section className="bg-[#F5F5F1] text-black relative py-10">
       <div className="relative max-w-7xl mx-auto px-4">
@@ -39,33 +43,40 @@ export default function CapabilitiesSection() {
           industries seeking to maximise their digital potential.
         </p>
 
-        {/* Accordion */}
-        <div className="grid md:grid-cols-2 gap-6">
-          {capabilities.map((item, index) => (
-            <div key={index} className="bg-white rounded-lg p-4 shadow-sm">
-              <button
-                onClick={() => toggleDropdown(index)}
-                className="w-full flex justify-between items-center text-left"
-              >
-                <span className="font-medium">{item.title}</span>
+        {/* TWO INDEPENDENT COLUMNS */}
+        <div className="flex flex-col md:flex-row gap-6">
 
-                <FaCaretDown
-                  className={`transition-transform duration-300 text-brand size-6 cursor-pointer ${
-                    openIndex === index ? "rotate-180" : ""
-                  }`}
+          {/* LEFT COLUMN */}
+          <div className="flex-1 flex flex-col gap-6">
+            {leftColumn.map((item, colIndex) => {
+              const index = colIndex * 2; // actual index in array
+              return (
+                <AccordionCard
+                  key={index}
+                  item={item}
+                  index={index}
+                  openIndex={openIndex}
+                  toggleDropdown={toggleDropdown}
                 />
-              </button>
+              );
+            })}
+          </div>
 
-              {/* Dropdown Content */}
-              <div
-                className={`transition-all overflow-hidden ${
-                  openIndex === index ? "max-h-40 mt-3" : "max-h-0"
-                }`}
-              >
-                <p className="text-sm">{item.description}</p>
-              </div>
-            </div>
-          ))}
+          {/* RIGHT COLUMN */}
+          <div className="flex-1 flex flex-col gap-6">
+            {rightColumn.map((item, colIndex) => {
+              const index = colIndex * 2 + 1; // actual index in array
+              return (
+                <AccordionCard
+                  key={index}
+                  item={item}
+                  index={index}
+                  openIndex={openIndex}
+                  toggleDropdown={toggleDropdown}
+                />
+              );
+            })}
+          </div>
         </div>
 
         <p className="mt-10 text-justify">
@@ -74,5 +85,37 @@ export default function CapabilitiesSection() {
         </p>
       </div>
     </section>
+  );
+}
+
+/* ---------------------------------------------
+   REUSABLE ACCORDION CARD COMPONENT
+---------------------------------------------- */
+function AccordionCard({ item, index, openIndex, toggleDropdown }: any) {
+  return (
+    <div className="bg-white p-4 shadow-sm">
+      <div className="w-full flex justify-between items-center text-left cursor-default">
+
+        {/* TITLE (NOT CLICKABLE) */}
+        <span className="font-medium select-none">{item.title}</span>
+
+        {/* ARROW (ONLY CLICKABLE PART) */}
+        <FaCaretDown
+          onClick={() => toggleDropdown(index)}
+          className={`transition-transform duration-300 text-brand size-6 cursor-pointer ${
+            openIndex === index ? "rotate-180" : ""
+          }`}
+        />
+      </div>
+
+      {/* DROPDOWN CONTENT */}
+      <div
+        className={`overflow-hidden transition-[max-height] duration-300 ${
+          openIndex === index ? "max-h-[500px] mt-3" : "max-h-0"
+        }`}
+      >
+        <p className="text-sm">{item.description}</p>
+      </div>
+    </div>
   );
 }
