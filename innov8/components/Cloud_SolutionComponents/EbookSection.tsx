@@ -22,7 +22,7 @@ export default function EbookSection() {
             Innov8 Cloud Transformation Guide 2025
           </h2>
           
-          <p className="text-lg md:text-xl mb-8 leading-relaxed">
+          <p className="text-lg md:text-xl mb-8 leading-relaxed text-justify">
             Uncover the critical trends shaping modern enterprise cloud adoption—from multi-cloud governance and FinOps optimization to building inherently secure, resilient platform architectures for digital disruption.
           </p>
 

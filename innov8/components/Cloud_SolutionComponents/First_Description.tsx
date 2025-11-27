@@ -27,14 +27,14 @@ const First_Description: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           {/* Left side - Main heading */}
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 ">
               Building a secure, compliant foundation with governance built into your cloud native architecture.
             </h2>
           </div>
           
           {/* Right side - Statistics */}
           <div>
-            <p className="text-gray-700 text-lg leading-relaxed">
+            <p className="text-gray-700 text-lg leading-relaxed text-justify">
               However, only <span className="font-semibold">35 percent</span> of organizations report they have fully achieved their expected outcomes from cloud, and <span className="font-semibold">65 percent</span> identify <span className="italic">"Security and Compliance risk"</span> as the most frequent barrier.
             </p>
           </div>
@@ -59,7 +59,7 @@ const First_Description: React.FC = () => {
               <div className="relative z-20">
                 {/* Content moved further down */}
                 <div className="mt-12 mb-20">
-                  <p className="text-gray-900 text-lg leading-relaxed">
+                  <p className="text-gray-900 text-lg leading-relaxed text-justify">
                     {contents[activeContent].text}
                   </p>
                 </div>
