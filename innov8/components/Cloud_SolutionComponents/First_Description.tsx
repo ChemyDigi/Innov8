@@ -24,28 +24,28 @@ const First_Description: React.FC = () => {
     <section className="relative w-full bg-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main heading and statistics side by side */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-12 lg:mb-16">
           {/* Left side - Main heading */}
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 ">
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-4 text-justify lg:text-left">
               Building a secure, compliant foundation with governance built into your cloud native architecture.
             </h2>
           </div>
           
           {/* Right side - Statistics */}
           <div>
-            <p className="text-gray-700 text-lg leading-relaxed text-justify">
+            <p className="text-gray-700 text-base md:text-lg leading-relaxed text-justify lg:text-left">
               However, only <span className="font-semibold">35 percent</span> of organizations report they have fully achieved their expected outcomes from cloud, and <span className="font-semibold">65 percent</span> identify <span className="italic">"Security and Compliance risk"</span> as the most frequent barrier.
             </p>
           </div>
         </div>
 
-        {/* Content Box with navigation inside */}
-        <div className="relative mb-16 ml-12 mr-8">
-          <div className="bg-[#F5F6F1] p-10 border border-gray-200 relative z-10 w-full">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-start">
-              {/* Left - Image in exact position */}
-              <div className="flex justify-center lg:justify-start -ml-20">
+        {/* Content Box - Mobile responsive */}
+        <div className="relative mb-12 lg:mb-16 lg:ml-12 lg:mr-8">
+          <div className="bg-[#F5F6F1] p-6 lg:p-10 border border-gray-200 relative z-10 w-full">
+            <div className="flex flex-col lg:grid lg:grid-cols-2 lg:gap-2 items-start">
+              {/* Image - No overflow, on top for mobile */}
+              <div className="flex justify-center w-full mb-6 lg:mb-0 lg:justify-start lg:-ml-20">
                 <div className="w-full max-w-lg">
                   <img 
                     src={contents[activeContent].image} 
@@ -55,18 +55,18 @@ const First_Description: React.FC = () => {
                 </div>
               </div>
               
-              {/* Right - Content and Navigation */}
-              <div className="relative z-20">
-                {/* Content moved further down */}
-                <div className="mt-12 mb-20">
-                  <p className="text-gray-900 text-lg leading-relaxed text-justify">
+              {/* Content and Navigation */}
+              <div className="relative z-20 w-full">
+                {/* Content - Adjusted spacing for mobile */}
+                <div className="mt-0 lg:mt-12 mb-8 lg:mb-20">
+                  <p className="text-gray-900 text-base md:text-lg leading-relaxed text-justify lg:text-left">
                     {contents[activeContent].text}
                   </p>
                 </div>
 
-                {/* Navigation - Aligned with image bottom */}
+                {/* Navigation - Mobile responsive */}
                 <div className="relative w-full">
-                  {/* Navigation dots - on top of line */}
+                  {/* Navigation dots */}
                   <div className="flex justify-between mb-4">
                     {[0, 1, 2].map((index) => (
                       <button
@@ -85,9 +85,8 @@ const First_Description: React.FC = () => {
                     ))}
                   </div>
                   
-                  {/* The line - moved further down to align with image bottom */}
-                  <div className="h-1.5 bg-[#C7C7C7] rounded-full relative mt-8">
-                    {/* Highlighted segment - dark color when active */}
+                  {/* The line */}
+                  <div className="h-1.5 bg-[#C7C7C7] rounded-full relative mt-4 lg:mt-8">
                     <div 
                       className="h-1.5 bg-[#C51A1B] rounded-full absolute top-0 transition-all duration-300"
                       style={{
