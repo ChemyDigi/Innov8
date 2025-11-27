@@ -1,46 +1,44 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full h-[50vh] min-h-[380px] sm:h-[55vh] md:h-[500px] lg:h-[525px] overflow-hidden">
-      
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <Image
-          src="/images/insight/hero.jpg"
-          alt="Hero background"
-          width={2000}
-          height={1000}
-          className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] object-cover"
-        />
-      </div>
+    <section className="relative w-full">
+      <Image
+        src="/images/insight/hero.jpg"
+        alt="Hero background"
+        width={2000}
+        height={1000}
+        className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] object-cover"
+      />
 
-      {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-transparent" />
+      <div
+        className="
+          absolute inset-0 flex items-center 
+          px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40
 
-      {/* Content */}
-      <div className="absolute inset-0 flex items-center">
+          justify-center        
+          lg:justify-start    
+          text-center          
+          lg:text-left         
+        "
+      >
         <div
           className="
-            max-w-7xl mx-auto w-full
-            px-4 sm:px-6 lg:px-8
-
-            text-center          /* center on mobile + tablet */
-            lg:text-left         /* left align on desktop */
+            w-full 
+            max-w-3xl 
+            text-white
+            mx-auto             
+            lg:mx-0            
           "
         >
-          <div className="text-white">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+            Insights
+          </h1>
 
-            {/* Heading */}
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-              Insights
-            </h1>
+          <p className="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg max-w-xl mx-auto lg:mx-0">
+           Stay updated with emerging <br /> ideas, market movements, <br />and expert viewpoints shaping the future
 
-            {/* Subtitle */}
-            <p className="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg max-w-xl mx-auto lg:mx-0">
-              Stay updated with emerging ideas, market movements, and expert viewpoints shaping the future
-            </p>
-          </div>
+          </p>
         </div>
       </div>
     </section>

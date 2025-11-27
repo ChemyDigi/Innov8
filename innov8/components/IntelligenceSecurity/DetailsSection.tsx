@@ -10,7 +10,7 @@ export default function Innov8DigitalSecurity() {
           <Image
             src="/images/IntelligenceSecurity/Intelligence.jpg"
             alt="Innov8 Digital Security"
-            width={900}
+            width={100}
             height={600}
             className="w-full h-auto object-cover"
           />

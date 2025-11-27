@@ -30,8 +30,8 @@ export default function Navbar() {
           <img
             src="/images/innov8whitelogo.png"
             alt="Innov8"
-            className="h-6"
-            height={100}
+            className="h-10"
+            height={500}
           />
         </Link>
 

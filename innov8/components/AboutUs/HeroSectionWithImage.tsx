@@ -1,29 +1,45 @@
-"use client";
+import Image from "next/image";
 
-import React from "react";
-
-export default function HeroSection(): React.ReactElement {
+export default function HeroSection() {
   return (
-    <section className="relative w-full min-h-[500px] bg-gray-900 text-white py-32 px-6 md:px-16 lg:px-32 overflow-hidden">
-      {/* BACKGROUND IMAGE */}
-      <div
-        className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: 'url("/images/top1.png")',
-        }}
-      >
-        {/* DARK BLUE OVERLAY */}
-        <div className="absolute inset-0 opacity-80 mix-blend-multiply"></div>
-      </div>
+    <section className="relative w-full">
+      <Image
+        src="/images/top1.png"
+        alt="Hero background"
+        width={2000}
+        height={1000}
+        className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] object-cover"
+      />
 
-      {/* CONTENT */}
-      <div className="relative z-10 max-w-7xl mx-auto">
-        <div className="max-w-3xl">
-          {/* MAIN TITLE */}
+      <div
+        className="
+          absolute inset-0 flex items-center 
+          px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40
+
+          justify-center        
+          lg:justify-start    
+          text-center          
+          lg:text-left         
+        "
+      >
+        <div
+          className="
+            w-full 
+            max-w-3xl 
+            text-white
+            mx-auto             
+            lg:mx-0            
+          "
+        >
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+            About us 
+          </h1>
+
+          <p className="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg max-w-xl mx-auto lg:mx-0">
             Unlock Your Organization's Full Potential with Our Digital
             Transformation Solutions
-          </h1>
+
+          </p>
         </div>
       </div>
     </section>

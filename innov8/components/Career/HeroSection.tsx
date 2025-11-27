@@ -1,47 +1,45 @@
-// app/career/components/HeroSection.tsx
-import Image from 'next/image'
+import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full h-[50vh] min-h-[400px] sm:h-[55vh] md:h-[525px] bg-gray-200">
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <Image
-          src="/images/Career/carhero.png"
-          alt="Career Hero"
-          fill
-          className="w-full h-full object-cover"
-          priority
-          sizes="100vw"
-        />
-      </div>
-      
-      {/* Gradient Overlay for better text readability */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/20 to-transparent" />
-      
-      {/* Content */}
-      <div className="absolute inset-0 flex items-center">
-        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-          <div className="text-white">
-            {/* Main Heading */}
-           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-              Together, We Engineer Tomorrow
-            </h1>
-            
-            {/* Subtitle */}
-             <p className="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg max-w-xl mx-auto lg:mx-0">
-              At INNOV8, we're not just filling positions; we're building careers that help shape a resilient digital future, driven by agility, engineering excellence, and a passion for cutting-edge solutions.
-            </p>
-          </div>
-        </div>
-      </div>
+    <section className="relative w-full">
+      <Image
+        src="/images/Career/carhero.png"
+        alt="Hero background"
+        width={2000}
+        height={1000}
+        className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] object-cover"
+      />
 
-      {/* Optional: Scroll indicator */}
-      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 hidden sm:block">
-        <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-white rounded-full mt-2 animate-bounce"></div>
+      <div
+        className="
+          absolute inset-0 flex items-center 
+          px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40
+
+          justify-center        
+          lg:justify-start    
+          text-center          
+          lg:text-left         
+        "
+      >
+        <div
+          className="
+            w-full 
+            max-w-3xl 
+            text-white
+            mx-auto             
+            lg:mx-0            
+          "
+        >
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+            Together, We Engineer Tomorrow
+          </h1>
+
+          <p className="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg max-w-xl mx-auto lg:mx-0">
+             At INNOV8, we're not just filling positions; we're building careers that help shape a resilient digital future, driven by agility, engineering excellence, and a passion for cutting-edge solutions.
+            </p>
         </div>
       </div>
     </section>
-  )
+  );
 }
