@@ -24,7 +24,7 @@ export default function Subsidiaries() {
           </p>
         </div>
 
-        <div className="mt-12 bg-[#F5F5F1] rounded-lg flex flex-col md:flex-row gap-6">
+        <div className="mt-12 bg-[#F5F5F1] flex flex-col md:flex-row gap-6">
           <Image
             src="/images/home/home1.jpg"
             alt="Subsidiary building"
