@@ -105,7 +105,7 @@ export default function Navbar() {
               </Link>
 
               <Link
-                href="/solutions/cloud"
+                href="/solutions/cloud-platform"
                 className="text-gray-700 hover:text-red-600 transition"
               >
                 Cloud and Platform Solutions
