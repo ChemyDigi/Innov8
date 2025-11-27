@@ -1,4 +1,3 @@
-// app/career/components/CareerDevelopmentSection.tsx
 'use client'
 
 import { useState, useRef } from 'react'
@@ -15,8 +14,10 @@ export default function CareerDevelopmentSection() {
         </svg>
       ),
       title: "Continuous Learning Culture",
-      description: "We foster an environment of non-stop growth. Employees have access to knowledge-sharing platforms, certification sponsorships, and opportunities to work with a selection of emerging technology vendors, turning insight into impact."
+      description:
+        "We foster an environment of non-stop growth. Employees have access to knowledge-sharing platforms, certification sponsorships, and opportunities to work with emerging technology vendors."
     },
+
     {
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -24,8 +25,10 @@ export default function CareerDevelopmentSection() {
         </svg>
       ),
       title: "Specialized Upskilling",
-      description: "We build the next generation of digital talent through immersive, real-world training in our core specialties: cybersecurity, cloud platforms, and artificial intelligence. This prepares our team to shape tomorrow's digital landscape."
+      description:
+        "We build next-generation talent through immersive learning in cybersecurity, cloud platforms, and AI — preparing teams to shape the digital future."
     },
+
     {
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -33,8 +36,10 @@ export default function CareerDevelopmentSection() {
         </svg>
       ),
       title: "Leadership in Innovation",
-      description: "We empower our team members to lead strategic initiatives and complex projects. We provide platforms for high-potential employees to develop leadership skills that inspire teams and drive growth."
+      description:
+        "We empower employees to lead strategic initiatives and develop leadership skills that inspire teams and drive innovation."
     },
+
     {
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -42,8 +47,10 @@ export default function CareerDevelopmentSection() {
         </svg>
       ),
       title: "Mentorship Programs",
-      description: "Our structured mentorship initiatives pair experienced professionals with emerging talent, creating pathways for knowledge transfer and accelerated career advancement across all technical domains."
+      description:
+        "Structured mentorship connects experienced professionals with emerging talent, accelerating skill development and career growth."
     },
+
     {
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -51,8 +58,10 @@ export default function CareerDevelopmentSection() {
         </svg>
       ),
       title: "Industry Recognition",
-      description: "We celebrate and reward exceptional contributions through awards, speaking opportunities at premier tech conferences, and publication support for groundbreaking research and innovations."
+      description:
+        "We celebrate excellence with awards, conference opportunities, and support for publishing original research and innovations."
     },
+
     {
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -60,18 +69,20 @@ export default function CareerDevelopmentSection() {
         </svg>
       ),
       title: "Certification Support",
-      description: "Full sponsorship for industry-recognized certifications in cloud technologies, cybersecurity frameworks, and AI/ML specializations to validate and enhance your technical expertise."
-    }
+      description:
+        "Full sponsorship for globally recognized certifications in cloud technology, cybersecurity, AI/ML, and more."
+    },
   ]
 
   const scroll = (direction: 'left' | 'right') => {
     if (scrollContainerRef.current) {
       const container = scrollContainerRef.current
       const scrollAmount = 300
-      const newPosition = direction === 'left' 
-        ? Math.max(0, scrollPosition - scrollAmount)
-        : Math.min(container.scrollWidth - container.clientWidth, scrollPosition + scrollAmount)
-      
+      const newPosition =
+        direction === 'left'
+          ? Math.max(0, scrollPosition - scrollAmount)
+          : Math.min(container.scrollWidth - container.clientWidth, scrollPosition + scrollAmount)
+
       container.scrollTo({ left: newPosition, behavior: 'smooth' })
       setScrollPosition(newPosition)
     }
@@ -80,67 +91,69 @@ export default function CareerDevelopmentSection() {
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-4 text-left">
+
+        {/* ---------- Heading ---------- */}
+        <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-4 text-center md:text-left">
           Grow with Us: Career Development at INNOV8
         </h2>
-        
-        {/* Subtitle */}
-        <p className="text-lg text-gray-700 mb-12 max-w-3xl text-justify">
-          At INNOV8, your career growth is integral to our success—we invest in your development through continuous learning, hands-on projects, and leadership opportunities.
-          Here's how we support every step of your journey:
+
+        {/* ---------- Subtitle ---------- */}
+        <p className="text-lg text-gray-700 mb-12 max-w-3xl text-center md:text-justify mx-auto md:mx-0">
+          At INNOV8, your career growth is integral to our success — we invest in continuous learning, hands-on experience, and leadership opportunities.
         </p>
-        
-        {/* Scrollable Cards Container */}
-        <div className="relative">
-          {/* Navigation Arrows - Positioned above the cards */}
-          <div className="flex justify-between items-center mb-6">
-            <button 
-              onClick={() => scroll('left')}
-              className="w-10 h-10 bg-gray-200 hover:bg-red-600 rounded-full flex items-center justify-center transition-colors duration-200 group"
-            >
-              <svg className="w-5 h-5 text-gray-600 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-              </svg>
-            </button>
-            
-            <button 
-              onClick={() => scroll('right')}
-              className="w-10 h-10 bg-gray-200 hover:bg-red-600 rounded-full flex items-center justify-center transition-colors duration-200 group"
-            >
-              <svg className="w-5 h-5 text-gray-600 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
-          </div>
-          
-          {/* Scrollable Cards */}
-          <div 
-            ref={scrollContainerRef}
-            className="flex space-x-6 overflow-x-auto scrollbar-hide scroll-smooth py-4"
-            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+
+        {/* ---------- Navigation arrows (centered on mobile/tablet) ---------- */}
+        <div className="flex justify-center md:justify-between items-center mb-6 gap-6 md:gap-0">
+          <button
+            onClick={() => scroll('left')}
+            className="w-10 h-10 bg-gray-200 hover:bg-red-600 rounded-full flex items-center justify-center transition group"
           >
-            {features.map((feature, index) => (
-              <div key={index} className="flex-shrink-0 w-80 bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300">
-                {/* Icon - Left aligned */}
-                <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mb-4">
-                  <div className="text-red-600">
-                    {feature.icon}
-                  </div>
-                </div>
-                
-                {/* Title - Left aligned */}
-                <h3 className="text-lg font-semibold text-gray-900 mb-3 text-left">
-                  {feature.title}
-                </h3>
-                
-                {/* Description - Left aligned with reduced line height */}
-                <p className="text-gray-700 leading-6 text-justify">
-                  {feature.description}
-                </p>
+            <svg className="w-5 h-5 text-gray-600 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+
+          <button
+            onClick={() => scroll('right')}
+            className="w-10 h-10 bg-gray-200 hover:bg-red-600 rounded-full flex items-center justify-center transition group"
+          >
+            <svg className="w-5 h-5 text-gray-600 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+
+        {/* ---------- Scrollable Cards ---------- */}
+        <div
+          ref={scrollContainerRef}
+          className="flex space-x-6 overflow-x-auto scrollbar-hide scroll-smooth py-4"
+          style={{ WebkitOverflowScrolling: 'touch' }}
+        >
+          {features.map((feature, index) => (
+            <div
+              key={index}
+              className="
+                flex-shrink-0 w-72 sm:w-80 
+                bg-white border border-gray-200 rounded-lg p-6 
+                hover:shadow-lg transition-shadow duration-300
+              "
+            >
+              {/* Icon */}
+              <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mb-4 mx-auto md:mx-0">
+                <div className="text-red-600">{feature.icon}</div>
               </div>
-            ))}
-          </div>
+
+              {/* Title */}
+              <h3 className="text-lg font-semibold text-gray-900 mb-2 text-center md:text-left">
+                {feature.title}
+              </h3>
+
+              {/* Description */}
+              <p className="text-gray-700 leading-6 text-center md:text-justify">
+                {feature.description}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

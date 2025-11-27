@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useRef } from 'react';
 
 export default function TeamSection() {
-  const scrollRef = useRef(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   const teamMembers = [
     { id: 1, name: "Mr. John Smith", role: "Chief Technology Officer", description: "Leading technology innovation with over 15 years of experience in enterprise solutions and digital transformation.", linkedin: "#" },
@@ -20,93 +20,112 @@ export default function TeamSection() {
   ];
 
   const slideLeft = () => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollBy({ left: -360, behavior: 'smooth' });
-    }
+    scrollRef.current?.scrollBy({ left: -300, behavior: 'smooth' });
   };
 
   const slideRight = () => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollBy({ left: 360, behavior: 'smooth' });
-    }
+    scrollRef.current?.scrollBy({ left: 300, behavior: 'smooth' });
   };
 
   return (
-    <section className="bg-[#F9F6F6] py-12 sm:py-16 lg:py-20 px-4 xs:px-6 sm:px-8 lg:px-12 xl:px-24">
+    <section className="bg-[#F9F6F6] py-12 sm:py-16 lg:py-20 px-4 sm:px-8 lg:px-12 xl:px-20">
       <div className="max-w-7xl mx-auto relative">
 
-        <h2 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-semibold text-[#C51A1B] mb-10">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-[#C51A1B] mb-10">
           Meet Our Team
         </h2>
 
-        {/* ARROWS - GRAY BY DEFAULT, RED ON HOVER */}
+        {/* LEFT ARROW */}
         <button
           onClick={slideLeft}
-          className="hidden md:flex absolute -left-14 top-1/2 -translate-y-1/2 w-12 h-12 bg-gray-300 text-gray-600 rounded-full justify-center items-center shadow-lg hover:bg-[#C51A1B] hover:text-white transition-all duration-300 z-20 group"
-          aria-label="Scroll left"
+          className="hidden md:flex absolute -left-10 lg:-left-14 top-1/2 -translate-y-1/2 
+          w-10 h-10 lg:w-12 lg:h-12 bg-gray-300 text-gray-600 rounded-full justify-center items-center 
+          shadow-lg hover:bg-[#C51A1B] hover:text-white transition-all duration-300 z-20 group"
         >
-          <svg className="w-6 h-6 group-hover:stroke-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-5 h-5 lg:w-6 lg:h-6 group-hover:stroke-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
           </svg>
         </button>
 
+        {/* RIGHT ARROW */}
         <button
           onClick={slideRight}
-          className="hidden md:flex absolute -right-14 top-1/2 -translate-y-1/2 w-12 h-12 bg-gray-300 text-gray-600 rounded-full justify-center items-center shadow-lg hover:bg-[#C51A1B] hover:text-white transition-all duration-300 z-20 group"
-          aria-label="Scroll right"
+          className="hidden md:flex absolute -right-10 lg:-right-14 top-1/2 -translate-y-1/2 
+          w-10 h-10 lg:w-12 lg:h-12 bg-gray-300 text-gray-600 rounded-full justify-center items-center 
+          shadow-lg hover:bg-[#C51A1B] hover:text-white transition-all duration-300 z-20 group"
         >
-          <svg className="w-6 h-6 group-hover:stroke-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-5 h-5 lg:w-6 lg:h-6 group-hover:stroke-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
           </svg>
         </button>
 
-        {/* TEAM MEMBERS CAROUSEL */}
-        <div className="w-full flex justify-center">
+        {/* CAROUSEL */}
+        <div className="w-full">
           <div
             ref={scrollRef}
-            className="flex gap-6 overflow-x-auto scrollbar-hide snap-x snap-mandatory pb-8 scroll-smooth"
+            className="
+              flex gap-6 
+              overflow-x-auto 
+              scrollbar-hide 
+              snap-x snap-mandatory 
+              pb-6 
+              scroll-smooth
+            "
             style={{
               scrollbarWidth: 'none',
               msOverflowStyle: 'none',
-              width: 'calc(100rem)',
-              maxWidth: '100%',
             }}
           >
             {teamMembers.map((member) => (
               <div
                 key={member.id}
-                className="flex-none w-80 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 snap-start"
+                className="
+                  flex-none 
+                  w-64 sm:w-72 md:w-80 
+                  bg-white 
+                  rounded-xl 
+                  shadow-md 
+                  hover:shadow-lg 
+                  transition-all 
+                  duration-300 
+                  snap-start
+                "
               >
-                <div className="relative w-full h-64 rounded-t-xl overflow-hidden">
-                  <Image 
-                    src="/images/staff.png" 
-                    alt={member.name} 
-                    fill 
-                    className="object-cover" 
+                {/* IMAGE */}
+                <div className="relative w-full h-48 sm:h-56 md:h-64 rounded-t-xl overflow-hidden">
+                  <Image
+                    src="/images/staff.png"
+                    alt={member.name}
+                    fill
+                    className="object-cover"
                   />
                 </div>
 
-                <div className="p-6">
+                {/* TEXT */}
+                <div className="p-5 sm:p-6">
                   <div className="flex items-start justify-between mb-4">
-                    <h3 className="text-xl font-semibold text-gray-900 flex-1 pr-4">{member.name}</h3>
-                    <a 
-                      href={member.linkedin} 
-                      className="text-[#C51A1B] hover:text-[#A31516] transition p-1 flex-shrink-0"
-                      aria-label={`Connect with ${member.name} on LinkedIn`}
+                    <h3 className="text-lg sm:text-xl font-semibold text-gray-900 flex-1 pr-4">{member.name}</h3>
+
+                    {/* LinkedIn */}
+                    <a
+                      href={member.linkedin}
+                      className="text-[#C51A1B] hover:text-[#A31516] transition p-1"
                     >
-                      <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                      <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065z" />
                       </svg>
                     </a>
                   </div>
 
-                  <div className="w-full h-0.5 bg-[#C51A1B] mb-4"></div>
+                  <div className="w-full h-0.5 bg-[#C51A1B] mb-3"></div>
 
                   <p className="text-sm font-medium text-gray-700 mb-2">{member.role}</p>
 
-                  <p className="text-sm text-gray-600 leading-relaxed mb-6">{member.description}</p>
+                  <p className="text-sm text-gray-600 leading-relaxed mb-4">
+                    {member.description}
+                  </p>
 
-                  <button className="text-[#C51A1B] font-semibold flex items-center gap-1 group hover:text-[#A31516] transition">
+                  <button className="text-[#C51A1B] font-semibold flex items-center gap-1 group hover:text-[#A31516] transition text-sm">
                     Read More
                     <svg
                       className="w-4 h-4 transform group-hover:translate-x-1 transition"

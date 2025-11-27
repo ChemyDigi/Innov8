@@ -4,14 +4,17 @@ import Link from "next/link";
 import { IoMenu, IoClose } from "react-icons/io5";
 
 export default function Navbar() {
-  const [hover, setHover] = useState(false); // desktop dropdown
-  const [mobileOpen, setMobileOpen] = useState(false); // mobile menu
-  const [mobileDropdown, setMobileDropdown] = useState(false); // mobile solutions dropdown
+  const [hover, setHover] = useState(false);              // Desktop dropdown
+  const [mobileOpen, setMobileOpen] = useState(false);    // Mobile menu
+  const [mobileDropdown, setMobileDropdown] = useState(false); // Mobile Solutions dropdown
 
   return (
     <header className="w-full relative">
-      {/* Top Bar */}
-      <div className="bg-[#F1F1EB] text-black text-sm py-2 px-10 flex justify-end gap-8">
+      
+      {/* ------------------------------------------------ */}
+      {/*                 TOP BAR                          */}
+      {/* ------------------------------------------------ */}
+      <div className="bg-[#F1F1EB] text-black text-sm py-2 px-6 sm:px-10 flex justify-end gap-6 sm:gap-8">
         <Link href="/contact" className="hover:text-red-600 transition">
           Contact Us
         </Link>
@@ -20,31 +23,48 @@ export default function Navbar() {
         </Link>
       </div>
 
-      {/* Main Navigation */}
+      {/* ------------------------------------------------ */}
+      {/*                 MAIN NAVBAR                      */}
+      {/* ------------------------------------------------ */}
       <nav
-        className="bg-[#ffffff] py-4 px-20 flex items-center relative z-20"
+        className="
+          bg-white py-4 
+          px-4 sm:px-10 md:px-16 lg:px-20 
+          flex items-center justify-between 
+          relative z-20
+        "
         onMouseLeave={() => setHover(false)}
       >
-        {/* Logo */}
-        <Link href="/" className="font-bold text-xl tracking-wide mr-30">
+
+        {/* ---------------------- LOGO ---------------------- */}
+        <Link href="/" className="flex items-center">
           <img
             src="/images/innov8whitelogo.png"
             alt="Innov8"
-            className="h-10"
-            height={500}
+            className="
+              h-8       /* Mobile */
+              sm:h-9    /* Tablet */
+              md:h-10   /* Desktop */
+              w-auto
+            "
           />
         </Link>
 
-        {/* ---- DESKTOP NAVIGATION ---- */}
-        <ul className="hidden lg:flex gap-18 items-center text-[15px] text-black flex-1">
+        {/* ------------------ DESKTOP NAVIGATION ------------------ */}
+        <ul className="hidden lg:flex items-center gap-16 text-[15px] text-black ml-20">
           <li>
-            <Link href="/home" className=" hover:text-red-600 transition">
+            <Link href="/home" className="hover:text-red-600 transition">
               Home
             </Link>
           </li>
 
-          <li className="relative" onMouseEnter={() => setHover(true)}>
-            <button className="hover:text-red-600 transition">Solutions</button>
+          <li
+            className="relative"
+            onMouseEnter={() => setHover(true)}
+          >
+            <button className="hover:text-red-600 transition">
+              Solutions
+            </button>
           </li>
 
           <li>
@@ -60,7 +80,7 @@ export default function Navbar() {
           </li>
         </ul>
 
-        {/* ---- DESKTOP DROPDOWN ---- */}
+        {/* -------------------- DESKTOP DROPDOWN -------------------- */}
         {hover && (
           <div
             className="
@@ -72,23 +92,25 @@ export default function Navbar() {
               hidden lg:block
             "
           >
-            <h3 className="text-[30px] font-semibold mb-2 border-b border-red-500 pb-2 w-full text-red-700 ">
+            <h3 className="text-[30px] font-semibold mb-2 border-b border-red-500 pb-2 text-red-700">
               Solutions
             </h3>
 
-            <div className="grid grid-cols-3 gap-10 pt-4 text-[15px]">
+            <div className="grid grid-cols-3 gap-10 mt-4 text-[15px]">
               <Link
                 href="/solutions/ai-roadmaps"
                 className="text-gray-700 hover:text-red-600 transition"
               >
                 AI Roadmaps and R&D Services
               </Link>
+
               <Link
                 href="/solutions/cloud"
                 className="text-gray-700 hover:text-red-600 transition"
               >
                 Cloud and Platform Solutions
               </Link>
+
               <Link
                 href="/solutions/intelligence-security"
                 className="text-gray-700 hover:text-red-600 transition"
@@ -99,55 +121,61 @@ export default function Navbar() {
           </div>
         )}
 
-        {/* ---- MOBILE HAMBURGER ---- */}
+        {/* ------------------ MOBILE HAMBURGER ------------------ */}
         <button
           className="lg:hidden text-3xl text-black"
           onClick={() => setMobileOpen(!mobileOpen)}
         >
           {mobileOpen ? <IoClose /> : <IoMenu />}
         </button>
+
       </nav>
 
-      {/* ---- MOBILE + TABLET MENU ---- */}
+      {/* ------------------------------------------------ */}
+      {/*         MOBILE + TABLET SLIDE-DOWN MENU          */}
+      {/* ------------------------------------------------ */}
       {mobileOpen && (
-        <div className="bg-white w-full py-6 px-10 flex flex-col gap-6 text-center lg:hidden shadow-lg">
+        <div className="bg-white w-full py-6 px-6 sm:px-10 flex flex-col gap-6 text-center lg:hidden shadow-lg">
+
           <Link
-            href="/"
+            href="/home"
             className="text-black text-lg"
             onClick={() => setMobileOpen(false)}
           >
             Home
           </Link>
 
-          {/* Mobile Dropdown */}
-          <div className="flex flex-col gap-2">
+          {/* ------------------ MOBILE DROPDOWN ------------------ */}
+          <div className="flex flex-col gap-3">
             <button
-              className="text-black text-lg mx-auto"
+              className="text-black text-lg"
               onClick={() => setMobileDropdown(!mobileDropdown)}
             >
-              Solutions {mobileDropdown ? "" : ""}
+              Solutions
             </button>
 
             {mobileDropdown && (
-              <div className="flex flex-col gap-3 text-[15px] mt-2">
+              <div className="flex flex-col gap-3 text-gray-500 text-[15px]">
                 <Link
-                  href="/solutions/ai"
+                  href="/solutions/ai-roadmaps"
+                  className="hover:text-red-600"
                   onClick={() => setMobileOpen(false)}
-                  className="hover:text-red-600 text-gray-400"
                 >
                   AI Roadmaps and R&D Services
                 </Link>
+
                 <Link
                   href="/solutions/cloud"
+                  className="hover:text-red-600"
                   onClick={() => setMobileOpen(false)}
-                  className="hover:text-red-600 text-gray-400"
                 >
                   Cloud and Platform Solutions
                 </Link>
+
                 <Link
-                  href="/solutions/security"
+                  href="/solutions/intelligence-security"
+                  className="hover:text-red-600"
                   onClick={() => setMobileOpen(false)}
-                  className="hover:text-red-600 text-gray-400"
                 >
                   Intelligent Continuous Security
                 </Link>
@@ -170,6 +198,7 @@ export default function Navbar() {
           >
             About
           </Link>
+
         </div>
       )}
     </header>
