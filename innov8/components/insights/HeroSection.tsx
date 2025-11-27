@@ -8,11 +8,10 @@ export default function HeroSection() {
       <div className="absolute inset-0">
         <Image
           src="/images/insight/hero.jpg"
-          alt="Insights Hero"
-          fill
-          priority
-          className="object-cover w-full h-full"
-          sizes="100vw"
+          alt="Hero background"
+          width={2000}
+          height={1000}
+          className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] object-cover"
         />
       </div>
 
@@ -42,13 +41,6 @@ export default function HeroSection() {
               Stay updated with emerging ideas, market movements, and expert viewpoints shaping the future
             </p>
           </div>
-        </div>
-      </div>
-
-      {/* Scroll Indicator (hidden on mobile) */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 hidden sm:block">
-        <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-white rounded-full mt-2 animate-bounce"></div>
         </div>
       </div>
     </section>
