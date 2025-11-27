@@ -1,65 +1,47 @@
-"use client";
-
-import React from "react";
-
-export default function SeniorLeadership(): React.ReactElement {
+export default function Sustainability() {
   return (
-    <section className="w-full bg-white py-16 px-6 sm:px-10 md:px-16 lg:px-32">
-      <div className="max-w-7xl mx-auto">
+    <section className="relative py-10 bg-white">
+      {/* Background Colored Band */}
+      <div className="absolute inset-0 top-58 bg-[#F5F5F1] w-full"></div>
 
-        {/* Heading */}
-        <h1
-          className="
-            text-3xl 
-            sm:text-4xl 
-            md:text-5xl 
-            lg:text-6xl 
-            font-bold 
-            mb-10 
-            text-center 
-            lg:text-right
-          "
-          style={{ color: "#C51A1B" }}
-        >
+      <div className="relative max-w-7xl mx-auto px-4">
+        <h2 className="text-3xl font-bold text-brand mb-6 mt-6">
           Our Senior Leadership
-        </h1>
+        </h2>
 
-        {/* Grid Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
-
-          {/* LEFT SIDE - TEXT */}
-          <div className="space-y-8">
-
-            <p className="text-gray-700 text-base sm:text-lg md:text-xl leading-relaxed text-justify lg:text-left">
-              We've helped organizations modernize legacy systems, build scalable
-              cloud platforms, and secure their digital environments. Our
-              engineering-first approach ensures every solution delivers
+        {/* Overlapping White Card */}
+        <div
+          className="
+                relative z-20
+                mt-12
+                bg-white 
+                border border-[#D9D9D9] 
+                shadow-lg
+                flex flex-col md:flex-row 
+                gap-6 
+                p-4 md:p-6 
+            "
+        >
+          <div className="p-2 md:p-4 flex-1">
+            <p className="text-black leading-relaxed text-justify">
+              We’ve helped organizations modernize legacy systems, build
+              scalable cloud platforms, and secure their digital environments.
+              Our engineering-first approach ensures every solution delivers
               measurable business value from day one.
             </p>
 
-            {/* Button */}
-            <div className="flex flex-col sm:flex-row sm:justify-start justify-center">
-              <button className="bg-gray-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors duration-300">
-                Get in touch
-              </button>
-            </div>
-
-            {/* Divider */}
-            <div className="w-full h-px bg-gray-300"></div>
-
+            <button className="px-6 py-3 bg-black text-white mt-5 cursor-pointer">
+              Get in touch
+            </button>
           </div>
 
-          {/* RIGHT SIDE - IMAGE */}
-          <div>
-            <div className="rounded-lg w-full h-64 sm:h-80 md:h-96 lg:h-full overflow-hidden">
-              <img
-                src="/images/hand.png"
-                alt="Senior Leadership Team"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-
+          <img
+            src="/images/hand.png"
+            alt="Senior Leadership Team"
+            width={500}
+            height={350}
+            className="object-cover flex-1"
+          />
         </div>
       </div>
     </section>
