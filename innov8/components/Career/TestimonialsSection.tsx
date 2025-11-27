@@ -22,22 +22,19 @@ export default function TestimonialsSection() {
   ];
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-8 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-12 text-center md:text-left">
+        <h2 className="text-3xl font-bold text-brand mb-6">
           Here's What Our Team Says
         </h2>
 
         {/* Testimonials Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div
-              key={index}
-              className="bg-white p-8 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300"
-            >
+            <div key={index} className="bg-white p-8 flex flex-col">
               {/* Quote Icon */}
-              <div className="text-red-600 mb-4 flex justify-center md:justify-start">
+              <div className="text-brand mb-4 flex justify-center md:justify-start">
                 <svg
                   className="w-8 h-8"
                   fill="currentColor"
@@ -48,13 +45,13 @@ export default function TestimonialsSection() {
               </div>
 
               {/* Quote */}
-              <p className="text-gray-700 leading-relaxed text-justify mb-6">
+              <p className="text-lg leading-relaxed text-justify text-gray-700 mb-6 grow">
                 {testimonial.quote}
               </p>
 
               {/* Name & Position */}
-              <div className="text-center md:text-left">
-                <div className="font-bold text-red-600 text-lg">
+              <div className="text-center md:text-left mt-auto">
+                <div className="font-bold text-brand text-lg">
                   {testimonial.name}
                 </div>
                 <div className="font-semibold text-gray-900">

@@ -4,7 +4,10 @@ export default function AiTwoColumnSection() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 xl:gap-20">
         {/* LEFT SIDE */}
         <div>
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-semibold text-black leading-snug text-justify">
+          <h2
+            className="text-2xl sm:text-3xl md:text-3xl lg:text-3xl
+                font-semibold text-gray-900 leading-tight"
+          >
             We align vision, capabilities, and goals to create a clear direction
             for AI adoption.
           </h2>
