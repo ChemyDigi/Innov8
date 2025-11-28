@@ -23,6 +23,18 @@ export default function IndustrySolutions() {
         "Empowering retailers with data-driven insights, intelligent operations, and seamless omnichannel experiences.",
       img: "/images/home/retail.jpg",
     },
+    {
+      title: "Government",
+      description:
+        "Enabling public sector organizations to deliver citizen-centric services through secure, scalable, and innovative digital solutions that improve efficiency and transparency.",
+      img: "/images/home/government.jpg",
+    },
+    {
+      title: "Commercial",
+      description:
+        "Driving business growth and operational excellence for commercial enterprises with cutting-edge technology solutions that optimize processes and enhance competitiveness.",
+      img: "/images/home/commercial.jpg",
+    },
   ];
 
   const [index, setIndex] = useState(0);
@@ -76,9 +88,7 @@ export default function IndustrySolutions() {
       <div className="flex flex-col lg:flex-row items-start lg:items-center relative max-w-7xl mx-auto px-4">
         {/* Left side: Title, description, arrows */}
         <div className="flex-1 flex flex-col gap-6">
-          <h2 className="text-3xl font-bold text-brand">
-            Our Industry Solutions
-          </h2>
+          <h2 className="text-3xl font-bold text-brand">Sectors</h2>
 
           <p className="text-lg text-black max-w-md text-justify">
             We support organisations across diverse industries with tailored
