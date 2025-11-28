@@ -14,7 +14,7 @@ export default function TeamSection() {
       description:
         "Leading technology innovation with over 15 years of experience in enterprise solutions and digital transformation.",
       linkedin: "#",
-      image: "/images/team.jpg",
+      image: "/images/About/team.jpg",
     },
     {
       id: 2,
@@ -23,7 +23,7 @@ export default function TeamSection() {
       description:
         "Pioneering AI research and development with expertise in machine learning and neural networks.",
       linkedin: "#",
-      image: "/images/team.jpg",
+      image: "/images/About/team.jpg",
     },
     {
       id: 3,
@@ -32,7 +32,7 @@ export default function TeamSection() {
       description:
         "Designing scalable cloud infrastructure and implementing cutting-edge platform solutions.",
       linkedin: "#",
-      image: "/images/team.jpg",
+      image: "/images/About/team.jpg",
     },
     {
       id: 4,
@@ -41,7 +41,7 @@ export default function TeamSection() {
       description:
         "Specializing in intelligent continuous security and cybersecurity threat prevention.",
       linkedin: "#",
-      image: "/images/team.jpg",
+      image: "/images/About/team.jpg",
     },
     {
       id: 5,
@@ -50,7 +50,7 @@ export default function TeamSection() {
       description:
         "Driving organizational change through strategic digital initiatives and technology adoption.",
       linkedin: "#",
-      image: "/images/team.jpg",
+      image: "/images/About/team.jpg",
     },
     {
       id: 6,
@@ -59,7 +59,7 @@ export default function TeamSection() {
       description:
         "Developing comprehensive enterprise solutions for Fortune 500 companies worldwide.",
       linkedin: "#",
-      image: "/images/team.jpg",
+      image: "/images/About/team.jpg",
     },
     {
       id: 7,
@@ -68,7 +68,7 @@ export default function TeamSection() {
       description:
         "Architecting platform solutions that enable business growth and technological innovation.",
       linkedin: "#",
-      image: "/images/team.jpg",
+      image: "/images/About/team.jpg",
     },
     {
       id: 8,
@@ -77,7 +77,7 @@ export default function TeamSection() {
       description:
         "Leading research and development efforts in emerging technologies and future systems.",
       linkedin: "#",
-      image: "/images/team.jpg",
+      image: "/images/About/team.jpg",
     },
     {
       id: 9,
@@ -86,7 +86,7 @@ export default function TeamSection() {
       description:
         "Ensuring client success through strategic partnerships and innovative solution delivery.",
       linkedin: "#",
-      image: "/images/team.jpg",
+      image: "/images/About/team.jpg",
     },
     {
       id: 10,
@@ -95,7 +95,7 @@ export default function TeamSection() {
       description:
         "Promoting technology adoption and innovation across industries and business verticals.",
       linkedin: "#",
-      image: "/images/team.jpg",
+      image: "/images/About/team.jpg",
     },
   ];
 

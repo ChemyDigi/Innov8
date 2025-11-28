@@ -26,7 +26,7 @@ export default function OurValues(): React.ReactElement {
             {/* Image */}
             <div className="mt-12 overflow-hidden">
               <img
-                src="/images/image1.png"
+                src="/images/About/image1.png"
                 alt="Our Values"
                 className="w-full h-52 sm:h-64 md:h-72 object-cover"
               />
@@ -37,7 +37,7 @@ export default function OurValues(): React.ReactElement {
           <div>
             <div className="mb-8 mt-6 overflow-hidden">
               <img
-                src="/images/image2.png"
+                src="/images/About/image2.png"
                 alt="Our Game Plan"
                 className="w-full h-52 sm:h-64 md:h-72 object-cover"
               />

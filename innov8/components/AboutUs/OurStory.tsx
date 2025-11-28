@@ -24,25 +24,25 @@ export default function OurStory() {
     }
   > = {
     about: {
-      image: "/images/about.jpg",
+      image: "/images/About/about.jpg",
       title: "About Innov8",
       description:
         "Founded in 2020, Innov8 is a fast-growing technology consulting organisation specialising in Intelligent Continuous Security, Cloud & Platform Solutions, and AI Roadmaps & R&D Services. We partner with forward-thinking organizations to drive digital transformation through innovative technology solutions. Our team of experts brings decades of combined experience in enterprise technology, security, and AI-driven innovation.",
     },
     why: {
-      image: "/images/exist.png",
+      image: "/images/About/exist.png",
       title: "Why We Exist",
       description:
         "We exist to bridge the gap between emerging technologies and business transformation, enabling organizations to thrive in the digital age. Our mission is to empower businesses with cutting-edge solutions that drive growth, enhance security, and create sustainable competitive advantages in rapidly evolving markets.",
     },
     transformation: {
-      image: "/images/transform.png",
+      image: "/images/About/transform.png",
       title: "All Transformation",
       description:
         "Comprehensive digital transformation services that reimagine business processes and customer experiences through technology. From strategy to execution, we guide organizations through complete digital overhaul, ensuring seamless integration of new technologies while maximizing ROI and operational efficiency.",
     },
     enterprise: {
-      image: "/images/allEnterprise.jpg",
+      image: "/images/About/allEnterprise.jpg",
       title: "All Enterprise",
       description:
         "Enterprise-grade solutions designed for scalability, security, and long-term business success across industries. We deliver robust enterprise solutions that support large-scale operations, ensuring reliability, security, and performance for organizations of all sizes.",

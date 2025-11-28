@@ -40,7 +40,7 @@ export default function Sustainability() {
           </div>
 
           <img
-            src="/images/hand.png"
+            src="/images/About/hand.png"
             alt="Senior Leadership Team"
             width={500}
             height={350}

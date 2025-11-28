@@ -27,7 +27,7 @@ export default function TestimonialWithImage(): React.ReactElement {
           <div className="flex justify-center">
             <div className="w-96 h-96 sm:w-md sm:h-112 rounded-full overflow-hidden">
               <img
-                src="/images/CEO.png"
+                src="/images/About/CEO.png"
                 alt="Business Partnership"
                 className="w-full h-full object-contain translate-y-5"
               />

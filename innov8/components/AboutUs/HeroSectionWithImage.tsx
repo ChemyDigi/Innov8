@@ -4,7 +4,7 @@ export default function HeroSectionWithImage() {
   return (
     <section className="relative w-full">
       <Image
-        src="/images/top1.png"
+        src="/images/About/top1.png"
         alt="Hero background"
         width={2000}
         height={1000}
