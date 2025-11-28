@@ -51,7 +51,7 @@ export default function BlogDetail({ post, onClose }: BlogDetailProps) {
         <div className="px-4 sm:px-8 mb-8">
           <button
             onClick={onClose}
-            className="text-brand text-lg font-normal hover:text-red-700 transition-colors duration-200 flex items-center gap-2"
+            className="text-brand text-lg font-normal flex items-center gap-2 cursor-pointer"
           >
             <svg
               className="w-5 h-5"
@@ -86,12 +86,10 @@ export default function BlogDetail({ post, onClose }: BlogDetailProps) {
         {/* Content Section - Text fill layout */}
         <div className="px-4 sm:px-8 max-w-8xl mx-left">
           {/* Title */}
-          <h1 className="text-3xl sm:text-4xl font-medium text-gray-900 mb-6 leading-tight">
-            {post.title}
-          </h1>
+          <h1 className="text-3xl font-bold mb-6 text-black">{post.title}</h1>
 
           {/* Description */}
-          <p className="text-lg sm:text-xl font-normal text-gray-600 mb-8 leading-relaxed text-justify">
+          <p className="text-lg leading-relaxed text-justify mb-8 text-gray-600">
             {post.description}
           </p>
 
@@ -106,7 +104,7 @@ export default function BlogDetail({ post, onClose }: BlogDetailProps) {
           </div>
 
           {/* First Paragraph */}
-          <p className="text-base sm:text-lg font-normal text-gray-800 mb-8 sm:mb-12 leading-relaxed text-justify">
+          <p className="text-lg sm:text-lg font-normal text-black mb-8 sm:mb-12 leading-relaxed text-justify">
             {post.content.firstParagraph}
           </p>
 
@@ -121,7 +119,7 @@ export default function BlogDetail({ post, onClose }: BlogDetailProps) {
           </div>
 
           {/* Second Paragraph */}
-          <p className="text-base sm:text-lg font-normal text-gray-800 leading-relaxed text-justify mb-12 sm:mb-16">
+          <p className="text-lg sm:text-lg font-normal text-black mb-8 sm:mb-12 leading-relaxed text-justify">
             {post.content.secondParagraph}
           </p>
         </div>

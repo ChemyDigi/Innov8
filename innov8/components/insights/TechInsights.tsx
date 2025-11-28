@@ -132,14 +132,14 @@ export default function TechInsights({ onPostSelect }: TechInsightsProps) {
                   {/* Read More Button */}
                   <button
                     onClick={() => onPostSelect(card.id)}
-                    className="text-brand text-sm font-normal hover:text-brand/80 transition-all duration-200 flex items-center gap-2 group/btn w-full justify-start mt-4 shadow-none hover:shadow-none"
+                    className="text-brand text-sm font-normal flex items-center gap-2 group/btn w-full justify-start mt-4 cursor-pointer "
                   >
                     <span className="relative">
                       Read More
                       <span className="absolute bottom-0 left-0 w-0 h-0.5"></span>
                     </span>
                     <svg
-                      className="w-4 h-4 transform group-hover/btn:translate-x-1 transition-transform duration-200"
+                      className="w-4 h-4"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
