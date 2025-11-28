@@ -40,10 +40,10 @@ export default function Subsidiaries() {
             <p className="text-black leading-relaxed text-justify">
               At Innov8, our subsidiaries deliver specialised technology
               solutions designed to scale with your organisation - from cloud
-              infrastructure to AI - driven intelligence - empowering you to
+              driven intelligence - empowering you to
               accelerate innovation.
             </p>
-            <a href="#" className="text-brand mt-4 block font-medium">
+            <a href="/about" className="text-brand mt-4 block font-medium">
               Discover more
             </a>
           </div>
