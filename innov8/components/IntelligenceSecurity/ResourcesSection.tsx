@@ -37,12 +37,12 @@ export default function ResourcesSection() {
 
         <p className="text-lg mb-10">
           Our capabilities & technologies are designed to bring business value &
-          address the specific challenges of organisations  across different
+          address the specific challenges of organisations across different
           industries seeking to maximise their digital potential.
         </p>
 
-        {/* Accordion */}
-        <div className="grid md:grid-cols-2 gap-6">
+        {/* Accordion Grid */}
+        <div className="grid md:grid-cols-2 gap-6 items-start">
           {capabilities.map((item, index) => (
             <div key={index} className="bg-white rounded-lg p-4 shadow-sm">
               <button
@@ -60,8 +60,8 @@ export default function ResourcesSection() {
 
               {/* Dropdown Content */}
               <div
-                className={`transition-all overflow-hidden ${
-                  openIndex === index ? "max-h-40 mt-3" : "max-h-0"
+                className={`overflow-hidden transition-[max-height] duration-300 ${
+                  openIndex === index ? "max-h-[500px] mt-3" : "max-h-0"
                 }`}
               >
                 <p className="text-sm">{item.description}</p>

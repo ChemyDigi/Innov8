@@ -14,7 +14,7 @@ export default function IntelligenceHeroBanner() {
       <div
         className="
           absolute inset-0 flex items-center 
-          px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40
+          px-4 sm:px-8 md:px-16 lg:px-24 xl:px-33
 
           justify-center        
           lg:justify-start    
