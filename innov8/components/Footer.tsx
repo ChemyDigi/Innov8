@@ -22,15 +22,9 @@ export default function Footer() {
           text-sm
         "
         >
-          <a href="/privacy-policy" className="hover:underline">
-            Privacy Policy
-          </a>
-          <a href="/code-of-conduct" className="hover:underline">
-            Code of Conduct
-          </a>
-          <a href="/terms-conditions" className="hover:underline">
-            Terms & Conditions
-          </a>
+          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/code-of-conduct">Code of Conduct</a>
+          <a href="/terms-conditions">Terms & Conditions</a>
         </div>
       </div>
     </footer>
