@@ -37,7 +37,7 @@ export default function HeroSection() {
 
           <p className="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg max-w-xl mx-auto lg:mx-0">
             Reach out to us anytime <br />
-            we’re here to help and brwould love to hear from you.
+            we’re here to help and would love to hear from you.
           </p>
         </div>
       </div>

@@ -13,24 +13,15 @@ export default function OurValues(): React.ReactElement {
               Our Values
             </h2>
 
-            <ul className="text-lg leading-relaxed text-left md:text-justify space-y-4 text-black">
-              <li className="flex items-start">
-                <span className="text-brand mr-2 mt-1">•</span>
-                <span>
-                  Focus on positive results, and collaboration ecosystems
-                </span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-brand mr-2 mt-1">•</span>
-                <span>
-                  Alignment with backgrounds, conditions, expectations
-                </span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-brand mr-2 mt-1">•</span>
-                <span>Addressing challenges and collaboration ecosystems</span>
-              </li>
-            </ul>
+            <p className="text-lg leading-relaxed text-left md:text-justify text-black">
+              At the core of our values is a commitment to achieving meaningful,
+              positive results through strong collaboration ecosystems. We
+              believe in aligning with the diverse backgrounds, conditions, and
+              expectations of every stakeholder to ensure clarity, trust, and
+              shared purpose. By addressing challenges openly and fostering a
+              culture of cooperation, we create environments where innovation
+              can thrive and long term partnerships can grow.
+            </p>
 
             {/* Image */}
             <div className="mt-12 overflow-hidden">
@@ -53,30 +44,19 @@ export default function OurValues(): React.ReactElement {
             </div>
 
             <h2 className="text-3xl font-bold text-black mb-8 mt-12">
-              Our Game Plan Section
+              Our Game Plan
             </h2>
 
-            <ul className="text-lg leading-relaxed text-left md:text-justify space-y-4 text-black">
-              <li className="flex items-start">
-                <span className="text-brand mr-2 mt-1">•</span>
-                <span>Building real, good relationships</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-brand mr-2 mt-1">•</span>
-                <span>Focus on improving and rewarding creative styles</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-brand mr-2 mt-1">•</span>
-                <span>Embracing recent trends and innovations</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-brand mr-2 mt-1">•</span>
-                <span>
-                  We empower organisations to innovate by adopting modern cloud,
-                  security and AI driven practices.
-                </span>
-              </li>
-            </ul>
+            <p className="text-lg leading-relaxed text-left md:text-justify text-black">
+              Our game plan is built on fostering genuine, long-lasting
+              relationships while continuously encouraging and rewarding
+              creative approaches. We stay ahead by embracing emerging trends
+              and innovations that shape the future of the digital landscape.
+              With a strong focus on modern cloud, security, and AI-driven
+              practices, we empower organisations to transform and innovate with
+              confidence, enabling them to achieve meaningful progress and
+              sustainable growth.
+            </p>
           </div>
         </div>
       </div>
