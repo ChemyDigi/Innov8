@@ -57,7 +57,7 @@ export default function VisitUs() {
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full bg-brand flex items-center justify-center hover:opacity-90 transition-opacity"
+              className="w-10 h-10 rounded-full bg-black flex items-center justify-center hover:opacity-90 transition-opacity"
               aria-label="Facebook"
             >
               <Facebook className="w-4 h-4 text-white" />
@@ -66,7 +66,7 @@ export default function VisitUs() {
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full bg-brand flex items-center justify-center hover:opacity-90 transition-opacity"
+              className="w-10 h-10 rounded-full bg-black flex items-center justify-center hover:opacity-90 transition-opacity"
               aria-label="LinkedIn"
             >
               <Linkedin className="w-4 h-4 text-white" />
