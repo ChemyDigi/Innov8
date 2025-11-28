@@ -17,14 +17,22 @@ export default function LearnMoreSection() {
 
         {/* Right Content */}
         <div>
-          <p className="text-black text-base sm:text-lg md:text-xl leading-relaxed mb-6 sm:mb-8">
+          <p
+            className="
+         text-lg text-justify text-black sm:text-lg md:text-xl leading-relaxed mb-6 sm:mb-8"
+          >
             Leverage AI, data intelligence, and advanced engineering to
             strengthen security, optimize operations, and accelerate innovation
             across your organization
           </p>
 
           {/* Red Button */}
-          <button className="bg-brand text-white font-semibold text-base sm:text-lg px-8 sm:px-10 py-3 sm:py-4 w-full sm:w-auto hover:bg-brand/90 transition">
+          <button
+            className="
+                bg-brand text-white 
+                px-8 py-3 cursor-pointer
+              "
+          >
             Learn More
           </button>
         </div>

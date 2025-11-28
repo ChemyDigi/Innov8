@@ -19,7 +19,7 @@ export default function Innov8DigitalSecurity() {
         {/* RIGHT CONTENT */}
         <div>
           {/* Heading */}
-          <h2 className="text-2xl md:text-3xl font-semibold text-black leading-snug mb-4">
+          <h2 className="text-3xl font-bold text-black mb-6">
             Innov8 – Spearheading Intelligent Digital Security
           </h2>
 

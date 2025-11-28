@@ -5,9 +5,7 @@ export default function ExploreMoreSection() {
     <section className="w-full bg-white py-5 pt-20 px-6 md:px-16 lg:px-32">
       {/* Title + line */}
       <div className="mb-12">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-2 text-black">
-          Explore More
-        </h2>
+        <h2 className="text-3xl font-bold text-black mb-6">Explore More</h2>
         <div className="w-full h-0.5 bg-black/20"></div>
       </div>
 
@@ -16,7 +14,7 @@ export default function ExploreMoreSection() {
         {/* LEFT CARD */}
         <div className="bg-[#E9E7D8] p-10 md:p-14">
           {/* Red Heading */}
-          <h3 className="text-2xl md:text-3xl font-semibold text-[#C51616] leading-snug mb-6">
+          <h3 className="text-3xl font-bold text-brand mb-6">
             Innov8 Intelligent Security Report 2025
           </h3>
 
@@ -26,14 +24,14 @@ export default function ExploreMoreSection() {
           </p>
 
           {/* Main paragraph 1 */}
-          <p className="text-lg text-gray-700 leading-relaxed text-justify mb-8">
+          <p className="text-lg leading-relaxed text-justify text-black mb-8">
             Uncover the next-generation security trends shaping the digital
             landscape from AI-powered threat intelligence and Zero Trust
             strategies to Cloud-Native resilience at scale.
           </p>
 
           {/* Main paragraph 2 */}
-          <p className="text-lg text-gray-700 leading-relaxed text-justify mb-8">
+          <p className="text-lg leading-relaxed text-justify text-black mb-8">
             Download Innov8&apos;s most anticipated cybersecurity intelligence
             report now to empower your continuous security journey.
           </p>

@@ -21,7 +21,7 @@ export default function IntroSection() {
             <h2
               className="
                 text-2xl sm:text-3xl md:text-3xl lg:text-3xl
-                font-semibold text-gray-900 leading-tight
+                font-semibold text-gray-900 leading-tight text-justify
               "
             >
               The growth and well-being of our engineers and consultants is a

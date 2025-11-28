@@ -2,7 +2,7 @@ export default function ApproachSection() {
   return (
     <section className="w-full bg-white py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32">
       {/* Section Heading */}
-      <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-brand mb-8 sm:mb-10 md:mb-14">
+      <h2 className="text-3xl font-bold text-brand mb-6">
         A proven approach to AI <br className="hidden sm:block" />
         excellence
       </h2>
@@ -16,13 +16,13 @@ export default function ApproachSection() {
               1
             </div>
             <span className="text-brand font-semibold text-base sm:text-lg md:text-xl">
-              Strategy-First Alignment
+              Strategy First Alignment
             </span>
           </div>
 
-          <p className="text-black/80 leading-relaxed text-sm sm:text-base md:text-lg text-justify">
+          <p className="text-lg leading-relaxed text-justify text-black">
             We begin by integrating AI strategy with your core business
-            objectives, ensuring every initiative is ROI-driven and delivers
+            objectives, ensuring every initiative is ROI driven and delivers
             measurable value.
           </p>
         </div>
@@ -38,9 +38,9 @@ export default function ApproachSection() {
             </span>
           </div>
 
-          <p className="text-black/80 leading-relaxed text-sm sm:text-base md:text-lg text-justify">
+          <p className="text-lg leading-relaxed text-justify text-black">
             We break down the journey into manageable stages from pilot to
-            production, de-risking investment and building a foundation for
+            production, de risking investment and building a foundation for
             scalable growth.
           </p>
         </div>
@@ -56,8 +56,8 @@ export default function ApproachSection() {
             </span>
           </div>
 
-          <p className="text-black/80 leading-relaxed text-sm sm:text-base md:text-lg text-justify">
-            Our innovation labs accelerate time-to-value through continuous
+          <p className="text-lg leading-relaxed text-justify text-black">
+            Our innovation labs accelerate time to value through continuous
             experimentation, proof-of-concept development, and iterative
             refinement.
           </p>

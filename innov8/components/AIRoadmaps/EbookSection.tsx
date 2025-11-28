@@ -18,8 +18,7 @@ export default function EbookSection() {
         {/* RIGHT CONTENT */}
         <div className="text-white text-center lg:text-left">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight mb-6 sm:mb-8 md:mb-10">
-            Unlock AI's Full Strategic <br className="hidden sm:block" />
-            Potential – Download the <br className="hidden sm:block" />
+            Unlock AI's Full Strategic Potential Download the <br />
             Innov8 Playbook
           </h2>
 
