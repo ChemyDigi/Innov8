@@ -8,6 +8,7 @@ const First_Description: React.FC = () => {
   const contents = [
     {
       image: "/images/CloudSolutions/First_Description.png",
+      
       text: "Our solutions are designed to overcome these barriers and help you realize the full potential of the cloud. While the cloud offers new opportunities to modernize services and transform operations, security and compliance risk remain the greatest barrier to adoption."
     },
     {
@@ -34,8 +35,8 @@ const First_Description: React.FC = () => {
           
           {/* Right side - Statistics */}
           <div>
-            <p className="text-gray-700 text-base md:text-lg leading-relaxed text-justify lg:text-left">
-              However, only <span className="font-semibold">35 percent</span> of organizations report they have fully achieved their expected outcomes from cloud, and <span className="font-semibold">65 percent</span> identify <span className="italic">"Security and Compliance risk"</span> as the most frequent barrier.
+            <p className="text-gray-700 text-base md:text-lg leading-relaxed text-justify">
+              However, only <span className="font-semibold">35 percent</span> of organizations report they have fully achieved their expected outcomes from cloud, and <span className="font-semibold">65 percent</span> identify <span className="italic font-semibold">"Security and Compliance risk"</span> as the most frequent barrier.
             </p>
           </div>
         </div>
@@ -59,7 +60,7 @@ const First_Description: React.FC = () => {
               <div className="relative z-20 w-full">
                 {/* Content - Adjusted spacing for mobile */}
                 <div className="mt-0 lg:mt-12 mb-8 lg:mb-20">
-                  <p className="text-gray-900 text-base md:text-lg leading-relaxed text-justify lg:text-left">
+                  <p className="text-gray-900 text-base md:text-lg leading-relaxed text-justify ">
                     {contents[activeContent].text}
                   </p>
                 </div>

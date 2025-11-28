@@ -8,7 +8,7 @@ export default function WorkSection() {
             Let’s work together
           </h2>
 
-          <p className="text-black mt-3 max-w-xl">
+          <p className="text-black mt-3 max-w-xl text-lg text-justify">
             Work with industry-leading engineers and strategists who understand
             your business and build solutions that scale. Let’s transform your
             digital future – together

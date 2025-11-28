@@ -8,7 +8,7 @@ export default function WorkSection() {
             Connect with Our Cybersecurity Experts
           </h2>
 
-          <p className="text-black mt-3 max-w-xl">
+          <p className="text-black mt-3 max-w-xl text-lg">
             Serving global clients with a team of QA51–200 engineers
             specializing in cybersecurity, cloud, and AI.
           </p>

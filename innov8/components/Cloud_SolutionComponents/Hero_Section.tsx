@@ -32,7 +32,7 @@ export default function AiHeroBanner() {
           "
         >
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-            Emerging cloud native <br />solutions
+            Emerging Cloud Native <br />Solutions
           </h1>
 
           <p className="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg max-w-xl mx-auto lg:mx-0">

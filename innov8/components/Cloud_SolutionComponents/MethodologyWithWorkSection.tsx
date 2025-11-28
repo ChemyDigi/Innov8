@@ -22,7 +22,7 @@ export default function MethodologyWithWorkSection() {
               Execute & Operationalize
             </h2>
 
-            <p className="text-gray-300 text-lg md:text-xl leading-relaxed text-justify pt-5">
+            <p className="text-gray-300 text-lg md:text-lg leading-relaxed text-justify pt-5">
               We bring your strategic plans to life, building and deploying
               cutting-edge Cloud and Platform Solutions designed for Intelligent
               Continuous Security. Leveraging our end-to-end capabilities, we deliver

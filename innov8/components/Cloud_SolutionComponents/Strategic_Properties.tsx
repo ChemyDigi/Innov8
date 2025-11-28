@@ -52,7 +52,7 @@ const Strategic_Priorities: React.FC = () => {
                 <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3">
                   {priority.title}
                 </h3>
-                <p className="text-gray-700 leading-relaxed text-justify">
+                <p className="text-gray-700 leading-relaxed text-justify text-lg">
                   {priority.description}
                 </p>
               </div>

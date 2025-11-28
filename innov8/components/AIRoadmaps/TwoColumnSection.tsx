@@ -12,7 +12,7 @@ export default function AiTwoColumnSection() {
 
         {/* RIGHT SIDE */}
         <div>
-          <p className="text-black/80 text-base sm:text-lg md:text-xl leading-relaxed font-montserrat">
+          <p className="text-black/80 text-base sm:text-lg md:text-xl leading-relaxed font-montserrat text-justify">
             We break down the journey into manageable stages—from pilot to
             production. De-risking investment and building a foundation for
             scalable growth.
