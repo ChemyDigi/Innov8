@@ -1,32 +1,34 @@
-'use client';
+import Link from "next/link";
 
-export default function WorkTogetherCard() {
+export default function WorkTogether() {
   return (
-    <section className="py-10 sm:py-14 lg:py-20 bg-white">
-      {/* Card Container */}
-      <div className="max-w-7xl mx-auto bg-[#F5F6F1] shadow-md hover:shadow-lg transition-all duration-300 p-6 sm:p-10 rounded-lg">
-        
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-center">
+    <section className="py-20 bg-white">
+      <div className="relative max-w-7xl mx-auto p-10 bg-[#F5F5F1] flex flex-col md:flex-row items-start md:items-center justify-between">
+        {/* LEFT CONTENT */}
+        <div className="md:w-3/4">
+          <h2 className="text-3xl md:text-4xl font-semibold text-black">
+            Let’s work together
+          </h2>
 
-          {/* LEFT — TEXT */}
-          <div className="text-center lg:text-left">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-800 mb-4">
-              Let's Work Together
-            </h2>
+          <p className="text-black mt-3 max-w-xl">
+            Trusted by 200 industry professionals, supported by leading
+            technology partners, and connected with over 41 Innov8 team members
+            on LinkedIn.
+          </p>
+        </div>
 
-            <p className="text-sm sm:text-base text-gray-700 leading-relaxed max-w-md mx-auto lg:mx-0">
-              Trusted by 51–200 industry professionals, supported by leading technology partners,
-              and connected with over 41 Innov8 team members on LinkedIn.
-            </p>
-          </div>
-
-          {/* RIGHT — BUTTON */}
-          <div className="flex justify-center lg:justify-end">
-            <button className="bg-black text-white text-sm sm:text-base font-semibold py-3 px-6 sm:px-10 rounded-md hover:bg-gray-800 transition-all duration-300 w-full sm:w-auto">
-              Get in Touch
+        {/* RIGHT BUTTON (center vertically on desktop) */}
+        <div className="mt-6 md:mt-0 md:w-1/4 flex md:justify-end">
+          <Link href="/contact">
+            <button
+              className="
+                bg-black text-white 
+                px-8 py-3 cursor-pointer
+              "
+            >
+              Get in touch
             </button>
-          </div>
-
+          </Link>
         </div>
       </div>
     </section>

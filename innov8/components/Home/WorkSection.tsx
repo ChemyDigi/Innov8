@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function WorkSection() {
   return (
     <section className="py-20 bg-white">
@@ -17,14 +19,16 @@ export default function WorkSection() {
 
         {/* RIGHT BUTTON (center vertically on desktop) */}
         <div className="mt-6 md:mt-0 md:w-1/4 flex md:justify-end">
-          <button
-            className="
-              bg-black text-white 
-              px-8 py-3 cursor-pointer
-            "
-          >
-            Get in touch
-          </button>
+          <Link href="/contact">
+            <button
+              className="
+                bg-black text-white 
+                px-8 py-3 cursor-pointer
+              "
+            >
+              Get in touch
+            </button>
+          </Link>
         </div>
       </div>
     </section>

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Sustainability() {
   return (
     <section className="relative py-10 bg-white">
@@ -30,9 +32,11 @@ export default function Sustainability() {
               minimize environmental impact.
             </p>
 
-            <button className="px-6 py-3 bg-black text-white mt-5 cursor-pointer">
-              Get in touch
-            </button>
+            <Link href="/contact">
+              <button className="px-6 py-3 bg-black text-white mt-5 cursor-pointer">
+                Get in touch
+              </button>
+            </Link>
           </div>
 
           <img

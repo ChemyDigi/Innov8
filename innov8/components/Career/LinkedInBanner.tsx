@@ -20,20 +20,21 @@ export default function LinkedInBanner() {
       {/* Content */}
       <div className="absolute inset-0 flex items-center">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-          
-          <div className="
+          <div
+            className="
             grid grid-cols-1 
             md:grid-cols-2 
             gap-6 
             items-center
             text-center 
             md:text-left
-          ">
+          "
+          >
             {/* Left Text */}
             <div className="text-white">
               <p className="text-lg sm:text-xl md:text-2xl leading-snug">
-                Join our LinkedIn community for the latest updates 
-                on news and job opportunities
+                Join our LinkedIn community for the latest updates on news and
+                job opportunities
               </p>
             </div>
 
@@ -46,7 +47,6 @@ export default function LinkedInBanner() {
                 className="
                   bg-white text-gray-900 
                   px-6 py-2 
-                  rounded-md 
                   font-medium 
                   hover:bg-gray-100 
                   transition-colors duration-200
@@ -56,7 +56,6 @@ export default function LinkedInBanner() {
               </a>
             </div>
           </div>
-
         </div>
       </div>
     </section>

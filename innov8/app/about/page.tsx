@@ -1,7 +1,3 @@
-
-  
-
-
 import HeroSectionWithImage from "../../components/AboutUs/HeroSectionWithImage";
 import DigitalShiftIntro from "../../components/AboutUs/DigitalShiftIntro";
 import  OurValues from "../../components/AboutUs/OurValues";

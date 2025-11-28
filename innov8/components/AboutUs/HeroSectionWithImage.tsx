@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function HeroSection() {
+export default function HeroSectionWithImage() {
   return (
     <section className="relative w-full">
       <Image
@@ -32,13 +32,12 @@ export default function HeroSection() {
           "
         >
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-            About us 
+            Your Partner in Intelligent Transformation
           </h1>
 
           <p className="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg max-w-xl mx-auto lg:mx-0">
             Unlock Your Organization's Full Potential with Our Digital
             Transformation Solutions
-
           </p>
         </div>
       </div>

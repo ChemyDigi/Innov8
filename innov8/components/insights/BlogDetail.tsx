@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 interface BlogPost {
   title: string;
@@ -20,27 +20,27 @@ export default function BlogDetail({ post, onClose }: BlogDetailProps) {
   // Different images for different topics
   const getTopicImage = (title: string) => {
     switch (title) {
-      case 'Banking and Finance':
-        return '/images/insight/banking.png';
-      case 'Digital Strategy':
-        return '/images/insight/digital.png';
-      case 'AI & Future Technology':
-        return '/images/insight/ai.png';
+      case "Banking and Finance":
+        return "/images/insight/banking.png";
+      case "Digital Strategy":
+        return "/images/insight/digital.png";
+      case "AI & Future Technology":
+        return "/images/insight/ai.png";
       default:
-        return '/images/insight/banking.png';
+        return "/images/insight/banking.png";
     }
   };
 
   const getContentImage = (title: string) => {
     switch (title) {
-      case 'Banking and Finance':
-        return '/images/insight/banking in.png';
-      case 'Digital Strategy':
-        return '/images/insight/banking in.png';
-      case 'AI & Future Technology':
-        return '/images/insight/banking in.png';
+      case "Banking and Finance":
+        return "/images/insight/banking in.png";
+      case "Digital Strategy":
+        return "/images/insight/banking in.png";
+      case "AI & Future Technology":
+        return "/images/insight/banking in.png";
       default:
-        return '/images/insight/banking in.png';
+        return "/images/insight/banking in.png";
     }
   };
 
@@ -51,10 +51,20 @@ export default function BlogDetail({ post, onClose }: BlogDetailProps) {
         <div className="px-4 sm:px-8 mb-8">
           <button
             onClick={onClose}
-            className="text-red-600 text-lg font-normal hover:text-red-700 transition-colors duration-200 flex items-center gap-2"
+            className="text-brand text-lg font-normal hover:text-red-700 transition-colors duration-200 flex items-center gap-2"
           >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M15 19l-7-7 7-7"
+              />
             </svg>
             Close Article
           </button>
@@ -62,7 +72,7 @@ export default function BlogDetail({ post, onClose }: BlogDetailProps) {
 
         {/* Main Image - Full width */}
         <div className="px-4 sm:px-8 mb-12">
-          <div className="relative w-full h-64 sm:h-80 bg-gray-200 rounded-lg overflow-hidden">
+          <div className="relative w-full h-64 sm:h-80 bg-gray-200 overflow-hidden">
             <Image
               src={getTopicImage(post.title)}
               alt={post.title}
@@ -87,8 +97,12 @@ export default function BlogDetail({ post, onClose }: BlogDetailProps) {
 
           {/* Date & Author */}
           <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-8">
-            <span className="text-base sm:text-lg font-bold text-red-600">{post.date}</span>
-            <span className="text-base sm:text-lg font-bold text-red-600">By {post.author}</span>
+            <span className="text-base sm:text-lg font-bold text-brand">
+              {post.date}
+            </span>
+            <span className="text-base sm:text-lg font-bold text-brand">
+              By {post.author}
+            </span>
           </div>
 
           {/* First Paragraph */}
@@ -97,7 +111,7 @@ export default function BlogDetail({ post, onClose }: BlogDetailProps) {
           </p>
 
           {/* Middle Image - Centered between paragraphs */}
-          <div className="relative w-full h-64 sm:h-80 bg-gray-200 rounded-lg overflow-hidden my-8 sm:my-12">
+          <div className="relative w-full h-64 sm:h-80 bg-gray-200 overflow-hidden my-8 sm:my-12">
             <Image
               src={getContentImage(post.title)}
               alt={`${post.title} Content`}
