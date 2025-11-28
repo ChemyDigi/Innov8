@@ -25,7 +25,7 @@ export default function SecuritySection() {
             security.
           </p>
 
-          <p className="text-lg text-black leading-relaxed pt-10 text-justify">
+          <p className="text-lg text-black leading-relaxed pt-8 text-justify">
             Help Innov8 provides intelligent, continuous security solutions and
             services from real-time threat detection and automated response to
             advanced threat intelligence and cloud-native security.
