@@ -35,11 +35,6 @@ export default function ExploreMoreSection() {
             Download Innov8&apos;s most anticipated cybersecurity intelligence
             report now to empower your continuous security journey.
           </p>
-
-          {/* Explore more link */}
-          <a className="text-[#C51616] text-lg font-medium cursor-pointer">
-            Explore more
-          </a>
         </div>
 
         {/* RIGHT IMAGE */}
