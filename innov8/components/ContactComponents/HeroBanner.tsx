@@ -8,7 +8,7 @@ export default function HeroSection() {
         alt="Hero background"
         width={2000}
         height={1000}
-        className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] object-cover"
+        className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] object-cover object-left"
       />
 
       <div
@@ -32,11 +32,12 @@ export default function HeroSection() {
           "
         >
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-            Contact
+            Your Next Big Leap Starts With a Conversation
           </h1>
 
           <p className="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg max-w-xl mx-auto lg:mx-0">
-            Reach out to us anytime <br />we’re here to help and brwould love to hear from you.
+            Reach out to us anytime <br />
+            we’re here to help and brwould love to hear from you.
           </p>
         </div>
       </div>

@@ -8,7 +8,7 @@ export default function HeroSection() {
         alt="Hero background"
         width={2000}
         height={1000}
-        className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] object-cover"
+        className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] object-cover object-left"
       />
 
       <div
@@ -32,12 +32,12 @@ export default function HeroSection() {
           "
         >
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-            Insights
+            Illuminate Tomorrow With Smarter Insights
           </h1>
 
           <p className="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg max-w-xl mx-auto lg:mx-0">
-           Stay updated with emerging <br /> ideas, market movements, <br />and expert viewpoints shaping the future
-
+            Stay updated with emerging <br /> ideas, market movements, <br />
+            and expert viewpoints shaping the future
           </p>
         </div>
       </div>
