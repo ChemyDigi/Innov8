@@ -21,12 +21,15 @@ export default function EbookSection() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight mb-6">
             Innov8 Cloud Transformation Guide 2025
           </h2>
-          
+
           <p className="text-lg md:text-xl mb-8 leading-relaxed text-justify">
-            Uncover the critical trends shaping modern enterprise cloud adoption—from multi-cloud governance and FinOps optimization to building inherently secure, resilient platform architectures for digital disruption.
+            Uncover the critical trends shaping modern enterprise cloud
+            adoption—from multi-cloud governance and FinOps optimization to
+            building inherently secure, resilient platform architectures for
+            digital disruption.
           </p>
 
-          <button className="bg-white text-brand font-semibold text-lg px-10 py-4 rounded-md hover:bg-gray-100 transition">
+          <button className="bg-white text-brand font-semibold text-lg px-10 py-4 hover:bg-gray-100 transition">
             Access the E-book Now
           </button>
         </div>

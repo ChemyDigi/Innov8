@@ -7,13 +7,12 @@ export default function WorkSection() {
         {/* LEFT CONTENT */}
         <div className="md:w-3/4">
           <h2 className="text-3xl md:text-4xl font-semibold text-black">
-            Let’s work together
+            Connect with us
           </h2>
 
           <p className="text-black mt-3 max-w-xl text-lg text-justify">
-            Work with industry-leading engineers and strategists who understand
-            your business and build solutions that scale. Let’s transform your
-            digital future – together
+            Expect great out of gold performance from industry experts &
+            innovation teams! Cloud & big time product talent sources!
           </p>
         </div>
 

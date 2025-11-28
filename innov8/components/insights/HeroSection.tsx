@@ -36,7 +36,7 @@ export default function HeroSection() {
           </h1>
 
           <p className="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg max-w-xl mx-auto lg:mx-0">
-            Stay updated with emerging <br /> ideas, market movements, <br />
+            Stay updated with emerging ideas, market movements, <br />
             and expert viewpoints shaping the future
           </p>
         </div>

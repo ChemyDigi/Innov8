@@ -4,13 +4,12 @@ import Link from "next/link";
 import { IoMenu, IoClose } from "react-icons/io5";
 
 export default function Navbar() {
-  const [hover, setHover] = useState(false);              // Desktop dropdown
-  const [mobileOpen, setMobileOpen] = useState(false);    // Mobile menu
+  const [hover, setHover] = useState(false); // Desktop dropdown
+  const [mobileOpen, setMobileOpen] = useState(false); // Mobile menu
   const [mobileDropdown, setMobileDropdown] = useState(false); // Mobile Solutions dropdown
 
   return (
     <header className="w-full relative">
-      
       {/* ------------------------------------------------ */}
       {/*                 TOP BAR                          */}
       {/* ------------------------------------------------ */}
@@ -35,7 +34,6 @@ export default function Navbar() {
         "
         onMouseLeave={() => setHover(false)}
       >
-
         {/* ---------------------- LOGO ---------------------- */}
         <Link href="/" className="flex items-center">
           <img
@@ -58,13 +56,8 @@ export default function Navbar() {
             </Link>
           </li>
 
-          <li
-            className="relative"
-            onMouseEnter={() => setHover(true)}
-          >
-            <button className="hover:text-red-600 transition">
-              Solutions
-            </button>
+          <li className="relative" onMouseEnter={() => setHover(true)}>
+            <button className="hover:text-red-600 transition">Solutions</button>
           </li>
 
           <li>
@@ -128,7 +121,6 @@ export default function Navbar() {
         >
           {mobileOpen ? <IoClose /> : <IoMenu />}
         </button>
-
       </nav>
 
       {/* ------------------------------------------------ */}
@@ -136,7 +128,6 @@ export default function Navbar() {
       {/* ------------------------------------------------ */}
       {mobileOpen && (
         <div className="bg-white w-full py-6 px-6 sm:px-10 flex flex-col gap-6 text-center lg:hidden shadow-lg">
-
           <Link
             href="/home"
             className="text-black text-lg"
@@ -165,7 +156,7 @@ export default function Navbar() {
                 </Link>
 
                 <Link
-                  href="/solutions/cloud"
+                  href="/solutions/cloud-platform"
                   className="hover:text-red-600"
                   onClick={() => setMobileOpen(false)}
                 >
@@ -198,7 +189,6 @@ export default function Navbar() {
           >
             About
           </Link>
-
         </div>
       )}
     </header>
