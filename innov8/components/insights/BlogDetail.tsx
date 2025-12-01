@@ -25,7 +25,7 @@ export default function BlogDetail({ post, onClose }: BlogDetailProps) {
       case "Digital Strategy":
         return "/images/insight/digital.png";
       case "AI & Future Technology":
-        return "/images/insight/ai.png";
+        return "/images/insight/AI.png";
       default:
         return "/images/insight/banking.png";
     }
