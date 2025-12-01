@@ -52,7 +52,7 @@ export default function EbookSection() {
             <div>
               <h3 className="text-xl font-semibold">Best Practices & Guidelines</h3>
               <p className="opacity-90">
-                Adopt proven security methodologies and frameworks to strengthen your organizations's defenses.
+                Adopt proven security methodologies and frameworks to strengthen your organizations&apos;s defenses.
               </p>
             </div>
           </div>
