@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function EbookSection() {
   return (
@@ -17,21 +18,69 @@ export default function EbookSection() {
         </div>
 
         {/* RIGHT CONTENT */}
-        <div className="text-white">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight mb-6">
-            Innov8 Cloud Transformation Guide 2025
+        <div className="text-white lg:pl-10">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight mb-6">
+            Further Reading From Innov8
           </h2>
 
-          <p className="text-lg md:text-xl mb-8 leading-relaxed text-justify">
-            Uncover the critical trends shaping modern enterprise cloud
-            adoption—from multi-cloud governance and FinOps optimization to
-            building inherently secure, resilient platform architectures for
-            digital disruption.
+          <p className="text-lg opacity-90 mb-8 max-w-lg">
+            Meaningful insights that shape our strategy-first approach to AI transformation.
           </p>
 
-          <button className="bg-white text-brand font-semibold text-lg px-10 py-4 hover:bg-gray-100 transition">
-            Access the E-book Now
-          </button>
+          {/* Insights list */}
+          <div className="space-y-6 border-l-3 border-white/60 pl-5">
+            <div>
+              <h3 className="text-xl font-semibold">Lean, Value‑Driven IT & AI Adoption</h3>
+              <p className="opacity-90">
+                We avoid bloated, redundant systems — preferring lean, efficient solutions that cut waste and maximize ROI.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold">Speed, Agility & Fast Time‑to‑Value</h3>
+              <p className="opacity-90">
+                Launch digital initiatives quickly with flexible teams, modern tools, and agile workflows — staying ahead of the competition.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold">Security, Governance & Risk‑Aware Deployment</h3>
+              <p className="opacity-90">
+                Embed compliance, data governance, and cybersecurity from day one — giving you peace of mind while scaling.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold">Empowering Teams with Long‑Term Capability Building</h3>
+              <p className="opacity-90">
+                Through coaching, mentoring, and knowledge transfer, we make your team stronger — not dependent.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold">Customized & Purpose‑Driven Solutions</h3>
+              <p className="opacity-90">
+                Tailored advice, vendor selection, and solution design — matching AI and digital tools to your unique business needs and goals.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold">Scalable & Future‑Proof Architecture</h3>
+              <p className="opacity-90">
+                Build flexible, modular systems and cloud/AI‑driven workflows to grow or pivot with your business over time.
+              </p>
+            </div>
+          </div>
+
+          {/* CTA BUTTON */}
+          <div className="mt-10">
+            <Link
+              href="/contact"
+              className="inline-block bg-white text-brand font-semibold px-8 py-3 text-lg hover:bg-gray-100 transition-none"
+            >
+              Contact Us
+            </Link>
+          </div>
         </div>
       </div>
     </section>
