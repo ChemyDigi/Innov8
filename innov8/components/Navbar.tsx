@@ -9,10 +9,8 @@ export default function Navbar() {
   const [mobileDropdown, setMobileDropdown] = useState(false); // Mobile Solutions dropdown
 
   return (
-    <header className="w-full relative">
-      {/* ------------------------------------------------ */}
-      {/*                 TOP BAR                          */}
-      {/* ------------------------------------------------ */}
+    <header className="w-full fixed top-0 z-50">
+   
       <div className="bg-[#F1F1EB] text-black text-sm py-2 px-6 sm:px-10 flex justify-end gap-6 sm:gap-8">
         <Link href="/contact" className="hover:text-red-600 transition">
           Contact Us
@@ -21,10 +19,6 @@ export default function Navbar() {
           Careers
         </Link>
       </div>
-
-      {/* ------------------------------------------------ */}
-      {/*                 MAIN NAVBAR                      */}
-      {/* ------------------------------------------------ */}
       <nav
         className="
           bg-white py-4 
@@ -34,7 +28,6 @@ export default function Navbar() {
         "
         onMouseLeave={() => setHover(false)}
       >
-        {/* ---------------------- LOGO ---------------------- */}
         <Link href="/" className="flex items-center">
           <img
             src="/images/innov8whitelogo.png"
@@ -47,8 +40,6 @@ export default function Navbar() {
             "
           />
         </Link>
-
-        {/* ------------------ DESKTOP NAVIGATION ------------------ */}
         <ul className="hidden lg:flex items-center gap-16 text-[15px] text-black ml-20">
           <li>
             <Link href="/home" className="hover:text-red-600 transition">
@@ -72,8 +63,6 @@ export default function Navbar() {
             </Link>
           </li>
         </ul>
-
-        {/* -------------------- DESKTOP DROPDOWN -------------------- */}
         {hover && (
           <div
             className="
@@ -113,8 +102,6 @@ export default function Navbar() {
             </div>
           </div>
         )}
-
-        {/* ------------------ MOBILE HAMBURGER ------------------ */}
         <button
           className="lg:hidden text-3xl text-black"
           onClick={() => setMobileOpen(!mobileOpen)}
@@ -122,10 +109,6 @@ export default function Navbar() {
           {mobileOpen ? <IoClose /> : <IoMenu />}
         </button>
       </nav>
-
-      {/* ------------------------------------------------ */}
-      {/*         MOBILE + TABLET SLIDE-DOWN MENU          */}
-      {/* ------------------------------------------------ */}
       {mobileOpen && (
         <div className="bg-white w-full py-6 px-6 sm:px-10 flex flex-col gap-6 text-center lg:hidden shadow-lg">
           <Link
@@ -136,7 +119,7 @@ export default function Navbar() {
             Home
           </Link>
 
-          {/* ------------------ MOBILE DROPDOWN ------------------ */}
+
           <div className="flex flex-col gap-3">
             <button
               className="text-black text-lg"
