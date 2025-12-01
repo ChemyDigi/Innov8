@@ -54,7 +54,7 @@ export default function VisitUs() {
           <h3 className="text-xl font-semibold mb-4">CONNECT WITH US</h3>
           <div className="flex gap-4">
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/profile.php?id=100069750262499#"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 rounded-full bg-black flex items-center justify-center hover:opacity-90 transition-opacity"
@@ -63,7 +63,7 @@ export default function VisitUs() {
               <Facebook className="w-4 h-4 text-white" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/company/innov8-digital/?originalSubdomain=lk"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 rounded-full bg-black flex items-center justify-center hover:opacity-90 transition-opacity"
