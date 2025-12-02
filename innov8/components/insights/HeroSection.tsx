@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full">
+    <section className="relative w-full pt-[88px] sm:pt-24 md:pt-[104px]">
       <Image
         src="/images/insight/hero.jpg"
         alt="Hero background"
