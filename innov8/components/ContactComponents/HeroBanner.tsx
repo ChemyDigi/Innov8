@@ -13,7 +13,7 @@ export default function HeroSection() {
 
       <div
         className="
-          absolute inset-0 flex items-center 
+          absolute inset-0 flex items-center pt-20
           px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40
 
           justify-center        
