@@ -89,7 +89,7 @@ export default function BlogDetail({ post, onClose }: BlogDetailProps) {
           <h1 className="text-3xl font-bold mb-6 text-black">{post.title}</h1>
 
           {/* Description */}
-          <p className="text-lg leading-relaxed text-justify mb-8 text-gray-600">
+          <p className="text-lg leading-relaxed text-justify tracking-tight mb-8 text-gray-600">
             {post.description}
           </p>
 
@@ -104,7 +104,7 @@ export default function BlogDetail({ post, onClose }: BlogDetailProps) {
           </div>
 
           {/* First Paragraph */}
-          <p className="text-lg sm:text-lg font-normal text-black mb-8 sm:mb-12 leading-relaxed text-justify">
+          <p className="text-lg sm:text-lg font-normal text-black mb-8 sm:mb-12 leading-relaxed text-justify tracking-tight">
             {post.content.firstParagraph}
           </p>
 
@@ -119,7 +119,7 @@ export default function BlogDetail({ post, onClose }: BlogDetailProps) {
           </div>
 
           {/* Second Paragraph */}
-          <p className="text-lg sm:text-lg font-normal text-black mb-8 sm:mb-12 leading-relaxed text-justify">
+          <p className="text-lg sm:text-lg font-normal text-black mb-8 sm:mb-12 leading-relaxed text-justify tracking-tight">
             {post.content.secondParagraph}
           </p>
         </div>

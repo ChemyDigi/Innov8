@@ -24,14 +24,14 @@ export default function ExploreMoreSection() {
           </p>
 
           {/* Main paragraph 1 */}
-          <p className="text-lg leading-relaxed text-justify text-black mb-8">
+          <p className="text-lg leading-relaxed text-justify tracking-tight text-black mb-8">
             Uncover the next-generation security trends shaping the digital
             landscape from AI-powered threat intelligence and Zero Trust
             strategies to Cloud-Native resilience at scale.
           </p>
 
           {/* Main paragraph 2 */}
-          <p className="text-lg leading-relaxed text-justify text-black mb-8">
+          <p className="text-lg leading-relaxed text-justify tracking-tight text-black mb-8">
             Download Innov8&apos;s most anticipated cybersecurity intelligence
             report now to empower your continuous security journey.
           </p>

@@ -28,7 +28,7 @@ const First_Description: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-12 lg:mb-16">
           {/* Left side - Main heading */}
           <div>
-            <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-4 text-justify lg:text-left">
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-4 text-justify tracking-tight lg:text-left">
               Building a secure, compliant foundation with governance built into
               your cloud native architecture.
             </h2>
@@ -36,7 +36,7 @@ const First_Description: React.FC = () => {
 
           {/* Right side - Statistics */}
           <div>
-            <p className="text-gray-700 text-base md:text-lg leading-relaxed text-justify">
+            <p className="text-gray-700 text-base md:text-lg leading-relaxed text-justify tracking-tight">
               However, only <span className="font-semibold">35 percent</span> of
               organizations report they have fully achieved their expected
               outcomes from cloud, and{" "}
@@ -68,7 +68,7 @@ const First_Description: React.FC = () => {
               <div className="relative z-20 w-full">
                 {/* Content - Adjusted spacing for mobile */}
                 <div className="mt-0 lg:mt-12 mb-8 lg:mb-20">
-                  <p className="text-lg leading-relaxed text-justify text-black">
+                  <p className="text-lg leading-relaxed text-justify tracking-tight text-black">
                     {contents[activeContent].text}
                   </p>
                 </div>

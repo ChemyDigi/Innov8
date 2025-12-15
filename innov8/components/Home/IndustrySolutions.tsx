@@ -90,7 +90,7 @@ export default function IndustrySolutions() {
         <div className="flex-1 flex flex-col gap-6">
           <h2 className="text-3xl font-bold text-brand">Sectors</h2>
 
-          <p className="text-lg text-black max-w-md text-justify">
+          <p className="text-lg text-black max-w-md text-justify tracking-tight">
             We support organisations across diverse industries with tailored
             digital strategies and high-impact technology solutions that solve
             real business problems.
@@ -139,7 +139,7 @@ export default function IndustrySolutions() {
                 <h3 className="font-bold text-lg mb-2 text-black p-4">
                   {item.title}
                 </h3>
-                <p className="text-sm text-gray-700 text-justify p-4 pt-0">
+                <p className="text-sm text-gray-700 text-justify tracking-tight p-4 pt-0">
                   {item.description}
                 </p>
               </div>

@@ -111,7 +111,7 @@ export default function OurStory() {
               {content[activeTab].title}
             </h3>
 
-            <p className="text-lg leading-relaxed text-justify text-black">
+            <p className="text-lg leading-relaxed text-justify tracking-tight text-black">
               {content[activeTab].description}
             </p>
           </div>

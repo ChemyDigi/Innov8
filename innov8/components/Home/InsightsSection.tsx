@@ -109,7 +109,7 @@ export default function InsightsSection() {
                   {item.title}
                 </h3>
 
-                <p className="text-sm text-gray-700 mb-4 px-5 text-justify">
+                <p className="text-sm text-gray-700 mb-4 px-5 text-justify tracking-tight">
                   {item.description}
                 </p>
 

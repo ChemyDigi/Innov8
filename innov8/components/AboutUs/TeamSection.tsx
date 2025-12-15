@@ -220,7 +220,7 @@ export default function TeamSection() {
                     {member.role}
                   </p>
 
-                  <p className="text-sm text-gray-600 leading-relaxed mb-4 text-justify">
+                  <p className="text-sm text-gray-600 leading-relaxed mb-4 text-justify tracking-tight">
                     {member.description}
                   </p>
                 </div>

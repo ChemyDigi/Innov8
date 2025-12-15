@@ -25,7 +25,7 @@ export default function SuccessSection() {
             "
         >
           <div className="p-2 md:p-4 flex-1">
-            <p className="text-black leading-relaxed text-justify">
+            <p className="text-black leading-relaxed text-justify tracking-tight">
               We've helped organizations modernize systems, build scalable cloud
               platforms, and secure their digital environments. Our engineering-
               first approach ensures measurable business value from day one.

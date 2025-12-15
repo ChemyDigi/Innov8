@@ -21,7 +21,7 @@ export default function IntroSection() {
             <h2
               className="
                 text-2xl sm:text-3xl md:text-3xl lg:text-3xl
-                font-semibold text-gray-900 leading-tight text-justify
+                font-semibold text-gray-900 leading-tight text-justify tracking-tight
               "
             >
               The growth and well-being of our engineers and consultants is a
@@ -31,13 +31,13 @@ export default function IntroSection() {
 
           {/* RIGHT — Paragraphs */}
           <div className="space-y-6">
-            <p className="text-lg leading-relaxed text-justify text-black">
+            <p className="text-lg leading-relaxed text-justify tracking-tight text-black">
               As we navigate an era of unique socioeconomic challenges, we
               believe our culture a blend of unique human potential and
               technical imagination is what makes transformative work possible.
             </p>
 
-            <p className="text-lg leading-relaxed text-justify text-black">
+            <p className="text-lg leading-relaxed text-justify tracking-tight text-black">
               Become a part of our agile community of innovators, problem
               solvers, and strategic leaders who are constantly redefining the
               technological landscape.

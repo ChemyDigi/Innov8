@@ -25,7 +25,7 @@ export default function Sustainability() {
             "
         >
           <div className="p-2 md:p-4 flex-1">
-            <p className="text-black leading-relaxed text-justify">
+            <p className="text-black leading-relaxed text-justify tracking-tight">
               We are committed to building technology solutions that operate
               responsibly and sustainably. Our focus is on cloud efficiency,
               reduced operational waste, and adopting engineering practices that

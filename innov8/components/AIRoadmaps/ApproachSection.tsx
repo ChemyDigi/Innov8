@@ -20,7 +20,7 @@ export default function ApproachSection() {
             </span>
           </div>
 
-          <p className="text-lg leading-relaxed text-justify text-black">
+          <p className="text-lg leading-relaxed text-justify tracking-tight text-black">
             We begin by integrating AI strategy with your core business
             objectives, ensuring every initiative is ROI driven and delivers
             measurable value.
@@ -38,7 +38,7 @@ export default function ApproachSection() {
             </span>
           </div>
 
-          <p className="text-lg leading-relaxed text-justify text-black">
+          <p className="text-lg leading-relaxed text-justify tracking-tight text-black">
             We break down the journey into manageable stages from pilot to
             production, de risking investment and building a foundation for
             scalable growth.
@@ -56,7 +56,7 @@ export default function ApproachSection() {
             </span>
           </div>
 
-          <p className="text-lg leading-relaxed text-justify text-black">
+          <p className="text-lg leading-relaxed text-justify tracking-tight text-black">
             Our innovation labs accelerate time to value through continuous
             experimentation, proof-of-concept development, and iterative
             refinement.

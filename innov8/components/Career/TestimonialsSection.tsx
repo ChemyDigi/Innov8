@@ -45,7 +45,7 @@ export default function TestimonialsSection() {
               </div>
 
               {/* Quote */}
-              <p className="text-lg leading-relaxed text-justify text-gray-700 mb-6 grow">
+              <p className="text-lg leading-relaxed text-justify tracking-tight text-gray-700 mb-6 grow">
                 {testimonial.quote}
               </p>
 

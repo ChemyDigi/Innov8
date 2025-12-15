@@ -80,7 +80,7 @@ export default function CapabilitiesSection() {
           </div>
         </div>
 
-        <p className="mt-10 text-justify">
+        <p className="mt-10 text-justify tracking-tight">
           We help organizations adopt modern platforms, secure digital
           ecosystems, and explore future-ready technologies.
         </p>

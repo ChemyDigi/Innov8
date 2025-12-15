@@ -13,7 +13,7 @@ export default function OurValues(): React.ReactElement {
               Our Values
             </h2>
 
-            <p className="text-lg leading-relaxed text-left md:text-justify text-black">
+            <p className="text-lg leading-relaxed text-left md:text-justify tracking-tight text-black">
               At the core of our values is a commitment to achieving meaningful,
               positive results through strong collaboration ecosystems. We
               believe in aligning with the diverse backgrounds, conditions, and
@@ -47,7 +47,7 @@ export default function OurValues(): React.ReactElement {
               Our Game Plan
             </h2>
 
-            <p className="text-lg leading-relaxed text-left md:text-justify text-black">
+            <p className="text-lg leading-relaxed text-left md:text-justify tracking-tight text-black">
               Our game plan is built on fostering genuine, long-lasting
               relationships while continuously encouraging and rewarding
               creative approaches. We stay ahead by embracing emerging trends

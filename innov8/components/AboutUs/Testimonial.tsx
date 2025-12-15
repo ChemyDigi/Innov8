@@ -49,7 +49,7 @@ export default function TestimonialWithImage(): React.ReactElement {
 
             {/* QUOTE TEXT */}
             <blockquote>
-              <p className="text-gray-700 text-base sm:text-lg md:text-xl leading-relaxed italic text-justify">
+              <p className="text-gray-700 text-base sm:text-lg md:text-xl leading-relaxed italic text-justify tracking-tight">
                 "We used all the essentials of expanding organizations into
                 digital businesses, focusing on driving growth through strategic
                 partnerships. As organisations face unprecedented socioeconomic

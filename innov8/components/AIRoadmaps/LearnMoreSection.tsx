@@ -19,7 +19,7 @@ export default function LearnMoreSection() {
         <div>
           <p
             className="
-         text-lg text-justify text-black sm:text-lg md:text-xl leading-relaxed mb-6 sm:mb-8"
+         text-lg text-justify tracking-tight text-black sm:text-lg md:text-xl leading-relaxed mb-6 sm:mb-8"
           >
             Leverage AI, data intelligence, and advanced engineering to
             strengthen security, optimize operations, and accelerate innovation

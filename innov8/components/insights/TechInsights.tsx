@@ -125,7 +125,7 @@ export default function TechInsights({ onPostSelect }: TechInsightsProps) {
 
                   <div className="w-full h-0.5 bg-brand mb-3"></div>
 
-                  <p className="text-sm text-gray-600 leading-relaxed mb-4 text-justify">
+                  <p className="text-sm text-gray-600 leading-relaxed mb-4 text-justify tracking-tight">
                     {card.description}
                   </p>
 

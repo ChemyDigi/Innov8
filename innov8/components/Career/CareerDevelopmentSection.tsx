@@ -160,7 +160,7 @@ export default function CareerDevelopmentSection() {
         </h2>
 
         {/* ---------- Subtitle ---------- */}
-        <p className="text-lg text-black mb-12 max-w-3xl text-left md:text-justify mx-auto md:mx-0 leading-relaxed">
+        <p className="text-lg text-black mb-12 max-w-3xl text-left md:text-justify tracking-tight mx-auto md:mx-0 leading-relaxed">
           At INNOV8, your career growth is integral to our success. We invest in
           continuous learning, hands-on experience, and leadership
           opportunities.
@@ -232,7 +232,7 @@ export default function CareerDevelopmentSection() {
               </h3>
 
               {/* Description */}
-              <p className="text-gray-700 leading-6 text-left md:text-justify">
+              <p className="text-gray-700 leading-6 text-left md:text-justify tracking-tight">
                 {feature.description}
               </p>
             </div>

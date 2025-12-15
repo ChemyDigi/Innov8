@@ -8,14 +8,14 @@ export default function Subsidiaries() {
         <h2 className="text-3xl font-bold text-brand mb-6">Our Subsidiaries</h2>
 
         <div className="grid md:grid-cols-2 gap-20 text-black">
-          <p className="text-lg leading-relaxed text-justify">
+          <p className="text-lg leading-relaxed text-justify tracking-tight">
             At Innov8, we help organisations reimagine their digital future. By
             aligning strategy, technology, and innovation, we create scalable
             solutions that strengthen operations and enhance customer
             experiences.
           </p>
 
-          <p className="text-lg leading-relaxed text-justify">
+          <p className="text-lg leading-relaxed text-justify tracking-tight">
             We enable the business transformation of governments, large-scale
             public bodies & enterprises through innovative and collaborative
             digital solutions. Our team helps organisations maximise their
@@ -37,7 +37,7 @@ export default function Subsidiaries() {
             <h3 className="text-xl font-semibold mb-3 text-black">
               Our Subsidiaries
             </h3>
-            <p className="text-black leading-relaxed text-justify">
+            <p className="text-black leading-relaxed text-justify tracking-tight">
               At Innov8, our subsidiaries deliver specialised technology
               solutions designed to scale with your organisation - from cloud
               driven intelligence - empowering you to

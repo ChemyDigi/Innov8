@@ -29,7 +29,7 @@ export default function Innov8DigitalSecurity() {
           </p>
 
           {/* Main paragraph */}
-          <p className="text-lg text-black leading-relaxed text-justify mb-10">
+          <p className="text-lg text-black leading-relaxed text-justify tracking-tight mb-10">
             Innov8 is dedicated to transforming how organizations manage risk,
             driving the shift from reactive defense to Intelligent Continuous
             Security. We leverage our expertise in next-generation technology

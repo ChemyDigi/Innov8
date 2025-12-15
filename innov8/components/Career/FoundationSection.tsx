@@ -18,7 +18,7 @@ text-3xl font-bold text-brand mb-6
         "
         >
           {/* Left Paragraph */}
-          <div className="text-left md:text-justify">
+          <div className="text-left md:text-justify tracking-tight">
             <p className="text-lg leading-relaxed text-black">
               INNOV8 was founded in 2020 with a commitment to delivering
               solutions that transcend traditional technology. We are an agile

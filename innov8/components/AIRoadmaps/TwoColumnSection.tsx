@@ -6,7 +6,7 @@ export default function AiTwoColumnSection() {
         <div>
           <h2
             className="text-2xl sm:text-3xl md:text-3xl lg:text-3xl
-                font-semibold text-gray-900 leading-tight text-justify"
+                font-semibold text-gray-900 leading-tight text-justify tracking-tight"
           >
             We align vision, capabilities, and goals to create a clear direction
             for AI adoption.
@@ -15,7 +15,7 @@ export default function AiTwoColumnSection() {
 
         {/* RIGHT SIDE */}
         <div>
-          <p className="text-lg leading-relaxed text-justify text-black">
+          <p className="text-lg leading-relaxed text-justify tracking-tight text-black">
             We break down the journey into manageable stages from pilot to
             production. De-risking investment and building a foundation for
             scalable growth.

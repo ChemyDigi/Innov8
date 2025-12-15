@@ -14,10 +14,10 @@ export default function VisitUs() {
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-3">Address :</h3>
-            <p className="text-lg leading-relaxed text-justify text-black">
+            <p className="text-lg leading-relaxed text-justify tracking-tight text-black">
               No. 6, Sulaiman Terrace, Colombo 5, Sri Lanka
             </p>
-            <p className="text-lg leading-relaxed text-justify text-black mt-2">
+            <p className="text-lg leading-relaxed text-justify tracking-tight text-black mt-2">
               531A, Upper Cross Street #04-98, Hong Lim Complex Singapore 051531
             </p>
           </div>
@@ -30,7 +30,7 @@ export default function VisitUs() {
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-3">Tel :</h3>
-            <p className="text-lg leading-relaxed text-justify text-black">
+            <p className="text-lg leading-relaxed text-justify tracking-tight text-black">
               +94 11 435 8577
             </p>
           </div>
@@ -43,7 +43,7 @@ export default function VisitUs() {
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-3">E-mail :</h3>
-            <p className="text-lg leading-relaxed text-justify text-black">
+            <p className="text-lg leading-relaxed text-justify tracking-tight text-black">
               info@innov8.digital
             </p>
           </div>

@@ -10,7 +10,7 @@ export default function WorkSection() {
             Connect with us
           </h2>
 
-          <p className="text-black mt-3 max-w-xl text-lg text-justify">
+          <p className="text-black mt-3 max-w-xl text-lg text-justify tracking-tight">
             Expect great out of gold performance from industry experts &
             innovation teams! Cloud & big time product talent sources!
           </p>

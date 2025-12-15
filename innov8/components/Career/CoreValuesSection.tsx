@@ -112,7 +112,7 @@ text-3xl font-bold text-brand mb-6
               {/* Description */}
               <p
                 className="
-text-lg leading-relaxed text-justify text-gray-700
+text-lg leading-relaxed text-justify tracking-tight text-gray-700
               "
               >
                 {value.description}

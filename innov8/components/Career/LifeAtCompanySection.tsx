@@ -65,7 +65,7 @@ text-3xl font-bold text-brand mb-6
                 <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3">
                   {feature.title}
                 </h3>
-                <p className="text-gray-700 leading-relaxed text-justify sm:text-left">
+                <p className="text-gray-700 leading-relaxed text-justify tracking-tight sm:text-left">
                   {feature.description}
                 </p>
               </div>
