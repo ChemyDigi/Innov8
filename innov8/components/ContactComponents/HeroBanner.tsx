@@ -8,7 +8,7 @@ export default function HeroSection() {
         alt="Hero background"
         width={2000}
         height={1000}
-        className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] object-cover object-left"
+        className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[450px] object-cover"
       />
 
       <div
@@ -37,7 +37,7 @@ export default function HeroSection() {
 
           <p className="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg max-w-xl mx-auto lg:mx-0">
             Reach out to us anytime <br />
-            we’re here to help and would love to hear from you.
+            we're here to help and would love to hear from you.
           </p>
         </div>
       </div>

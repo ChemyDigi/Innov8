@@ -8,7 +8,7 @@ export default function HeroSection() {
         alt="Hero background"
         width={2000}
         height={1000}
-        className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] object-cover"
+        className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[450px] object-cover"
       />
 
       <div
