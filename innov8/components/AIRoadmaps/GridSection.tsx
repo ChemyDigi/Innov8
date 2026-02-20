@@ -1,5 +1,5 @@
 import Image from "next/image";
-import FullWidthImg from "../../public/images/AiRoadmap/banner-image.jpg";
+import FullWidthImg from "../../public/images/AiRoadmap/Heroai.jpg";
 
 export default function AiGridSection() {
   const items = [

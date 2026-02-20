@@ -4,16 +4,16 @@ export default function IntelligenceHeroBanner() {
   return (
     <section className="relative w-full pt-[88px] sm:pt-24 md:pt-[104px]">
       <Image
-        src="/images/IntelligenceSecurity/hero-banner.png"
+        src="/images/IntelligenceSecurity/Hero.png"
         alt="Hero background"
         width={2000}
         height={1000}
-        className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] object-cover"
+        className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[450px] object-cover"
       />
 
       <div
         className="
-          absolute inset-0 flex items-center pt-28
+          absolute inset-0 flex items-center pt-20
           px-4 sm:px-8 md:px-16 lg:px-24 xl:px-33
 
           justify-center        

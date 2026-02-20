@@ -5,7 +5,7 @@ export default function Subsidiaries() {
   return (
     <section className="relative py-10 bg-white">
       <div className="relative max-w-7xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-brand mb-6">Our Subsidiaries</h2>
+        <h2 className="text-3xl font-bold text-brand mb-6">Our Value Proposition</h2>
 
         <div className="grid md:grid-cols-2 gap-20 text-black">
           <p className="text-lg leading-relaxed text-justify tracking-tight">

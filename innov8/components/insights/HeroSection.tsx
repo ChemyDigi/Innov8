@@ -4,11 +4,11 @@ export default function HeroSection() {
   return (
     <section className="relative w-full pt-[88px] sm:pt-24 md:pt-[104px]">
       <Image
-        src="/images/insight/hero.jpg"
+        src="/images/insight/insightshero.jpg"
         alt="Hero background"
         width={2000}
         height={1000}
-        className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] object-cover"
+        className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[450px] object-cover"
       />
 
       <div
