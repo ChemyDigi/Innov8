@@ -4,7 +4,7 @@ export default function IntelligenceHeroBanner() {
   return (
     <section className="relative w-full pt-[88px] sm:pt-24 md:pt-[104px]">
       <Image
-        src="/images/IntelligenceSecurity/hero-banner.png"
+        src="/images/IntelligenceSecurity/Hero.png"
         alt="Hero background"
         width={2000}
         height={1000}

@@ -4,7 +4,7 @@ export default function HeroSection() {
   return (
     <section className="relative w-full pt-[88px] sm:pt-24 md:pt-[104px]">
       <Image
-        src="/images/Career/carhero.png"
+        src="/images/Career/hero.jpg"
         alt="Hero background"
         width={2000}
         height={1000}
