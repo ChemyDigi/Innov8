@@ -8,10 +8,7 @@ export default function DigitalShiftIntro(): React.ReactElement {
       <div className="relative max-w-7xl mx-auto px-4 text-left md:text-left">
         {/* Mission Text */}
         <p className="text-black text-lg leading-relaxed text-justify tracking-tight mb-6">
-          Our mission is clear: To enable organisations to maximise their
-          digital potential. "We are an agile engineering-driven organisation
-          helping businesses modernise, innovate, and stay ahead of outdated
-          technology landscapes."
+INNOV8 empowers organizations to modernize, innovate, and stay ahead in a rapidly evolving digital world. As an agile, engineering-driven partner, we deliver secure, scalable, and future-ready technology solutions.
         </p>
 
         {/* Title */}

@@ -38,14 +38,8 @@ export default function Subsidiaries() {
               Our Subsidiaries
             </h3>
             <p className="text-black leading-relaxed text-justify tracking-tight">
-              At Innov8, our subsidiaries deliver specialised technology
-              solutions designed to scale with your organisation - from cloud
-              driven intelligence - empowering you to
-              accelerate innovation.
+INNOV8 operates through specialized subsidiaries focused on cybersecurity, cloud and platform solutions, and AI-driven innovation. This structure enables deeper domain expertise, agile execution, and scalable growth while maintaining a unified vision of delivering transformative technology solutions.
             </p>
-            <a href="/about" className="text-brand mt-4 block font-medium">
-              Discover more
-            </a>
           </div>
         </div>
       </div>
